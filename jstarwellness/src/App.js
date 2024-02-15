@@ -1,22 +1,28 @@
-import logo from './logo.svg'
+import { Provider } from 'react-redux'
+import { Route, Routes } from 'react-router-dom'
+
+import { store } from './app/store'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import AboutPage from './pages/About'
+import ContactPage from './pages/ContactPage'
+import HomePage from './pages/HomePage'
+
 import './App.css'
 
 function App() {
     return (
-        <div className='App'>
-            <header className='App-header'>
-                <img src={logo} className='App-logo' alt='logo' />
-                <p>JStar Wellness is under construction!!</p>
-                <a
-                    className='App-link'
-                    href='https://reactjs.org'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
+        <Provider store={store}>
+            <div className='App'>
+                <Header />
+                <Routes>
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='contact' element={<ContactPage />} />
+                    <Route path='about' element={<AboutPage />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Provider>
     )
 }
 
