@@ -51,7 +51,7 @@ const Header = () => {
                         ></i>
                     </a>
                     <a
-                        href='https://instagram.com'
+                        href='http://www.instagram.com/gotyoucovered805'
                         target='_blank'
                         rel='noopener noreferrer'
                         className='me-2'

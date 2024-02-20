@@ -54,7 +54,7 @@ const Footer = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='tel:+12065551234'
+                            href='tel:+18052687565'
                         >
                             <i className='fa fa-phone' /> 1-805-268-7565
                         </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='mailto:notreal@notreal.co'
+                            href='mailto:Stepup2shapeup@gmail.com'
                         >
                             <i className='fa fa-envelope-o' />{' '}
                             Stepup2shapeup@gmail.com
