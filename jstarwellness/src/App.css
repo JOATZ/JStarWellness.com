@@ -1,18 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 
 .App-link {
-  color: #61dafb;
+  color: hsl(193, 95%, 68%);
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Euphoria Script','Open Sans', sans-serif;
 }
 
 h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'Euphoria Script';
 }
 
 .top-panel {
