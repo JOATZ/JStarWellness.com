@@ -5,7 +5,10 @@ import { store } from './app/store'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import AboutPage from './pages/About'
+import BeforeAfterNT from './pages/BeforeAndAfterNT'
+import BeforeAfterPM from './pages/BeforeAndAfterPM'
 import ContactPage from './pages/ContactPage'
+import Gallery from './pages/Gallery'
 import HomePage from './pages/HomePage'
 
 import './App.css'
@@ -19,6 +22,9 @@ function App() {
                     <Route path='/' element={<HomePage />} />
                     <Route path='contact' element={<ContactPage />} />
                     <Route path='about' element={<AboutPage />} />
+                    <Route path='gallery' element={<Gallery />} />
+                    <Route path='BeforeAfterNT' element={<BeforeAfterNT />} />
+                    <Route path='BeforeAfterPM' element={<BeforeAfterPM />} />
                 </Routes>
                 <Footer />
             </div>
