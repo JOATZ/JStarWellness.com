@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Card, CardBody, CardImg, CardTitle, Col, Row } from 'reactstrap'
 
 import ParamedicalImage from '../app/assets/img/370x370.jpg'
@@ -11,14 +11,13 @@ const Gallery = () => {
         <>
             <SubHeader title='Gallery' subtitle='Before and After' />
             <Row>
-                <Col md='6' xs='12'>
-                    <NavLink to='/BeforeAndAfterPM'>
+                <Col md='6' xs='12' className='d-flex justify-content-center'>
+                    <Link to='/BeforeAndAfterPM'>
                         <Card className='gallery-card'>
                             <CardImg
                                 top
                                 src={ParamedicalImage}
                                 alt='Paramedical Services'
-                                style={{ width: '100%', height: 'auto' }}
                             />
                             <CardBody>
                                 <CardTitle tag='h5'>
@@ -26,16 +25,15 @@ const Gallery = () => {
                                 </CardTitle>
                             </CardBody>
                         </Card>
-                    </NavLink>
+                    </Link>
                 </Col>
-                <Col md='6' xs='12'>
-                    <NavLink to='/BeforeAndAfterNT'>
+                <Col md='6' xs='12' className='d-flex justify-content-center'>
+                    <Link to='/BeforeAndAfterNT'>
                         <Card className='gallery-card'>
                             <CardImg
                                 top
                                 src={NutritionImage}
                                 alt='Nutrition and Training'
-                                style={{ width: '100%', height: 'auto' }}
                             />
                             <CardBody>
                                 <CardTitle tag='h5'>
@@ -43,7 +41,7 @@ const Gallery = () => {
                                 </CardTitle>
                             </CardBody>
                         </Card>
-                    </NavLink>
+                    </Link>
                 </Col>
             </Row>
         </>

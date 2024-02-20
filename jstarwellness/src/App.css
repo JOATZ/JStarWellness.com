@@ -184,3 +184,15 @@ h2 {
   text-align: center;
   cursor: pointer;
 }
+
+/* Before and After Cards in Gallery-------------------------------------------------------------- */
+
+.before-after-card {
+  margin: 10px; 
+}
+
+.card-footer {
+  font-weight: bold;
+  font-style: italic;
+}
+

@@ -1,8 +1,15 @@
 import React from 'react'
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap'
+import {
+    Card,
+    CardBody,
+    CardFooter,
+    CardImg,
+    CardText,
+    CardTitle
+} from 'reactstrap'
 
 const BeforeAfterCard = ({ headline, author, content, src }) => (
-    <Card>
+    <Card className='before-after-card'>
         <CardImg
             top
             width='100%'
@@ -11,8 +18,8 @@ const BeforeAfterCard = ({ headline, author, content, src }) => (
         />
         <CardBody>
             <CardTitle tag='h5'>{headline}</CardTitle>
-            <CardText>{author}</CardText>
             <CardText>{content}</CardText>
+            <CardFooter>{author}</CardFooter>
         </CardBody>
     </Card>
 )

@@ -5,8 +5,8 @@ import { store } from './app/store'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import AboutPage from './pages/About'
-import BeforeAfterNT from './pages/BeforeAndAfterNT'
-import BeforeAfterPM from './pages/BeforeAndAfterPM'
+import BeforeAndAfterNT from './pages/BeforeAndAfterNT'
+import BeforeAndAfterPM from './pages/BeforeAndAfterPM'
 import ContactPage from './pages/ContactPage'
 import Gallery from './pages/Gallery'
 import HomePage from './pages/HomePage'
@@ -24,12 +24,12 @@ function App() {
                     <Route path='about' element={<AboutPage />} />
                     <Route path='gallery' element={<Gallery />} />
                     <Route
-                        path='gallery/BeforeAfterNT'
-                        element={<BeforeAfterNT />}
+                        path='BeforeAndAfterNT'
+                        element={<BeforeAndAfterNT />}
                     />
                     <Route
-                        path='gallery/BeforeAfterPM'
-                        element={<BeforeAfterPM />}
+                        path='BeforeAndAfterPM'
+                        element={<BeforeAndAfterPM />}
                     />
                 </Routes>
                 <Footer />
