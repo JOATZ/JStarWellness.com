@@ -1,5 +1,3 @@
-import { Col, Container, Row } from 'reactstrap'
-
 import AboutJenn from '../components/AboutJenn'
 import SubHeader from '../components/SubHeader'
 

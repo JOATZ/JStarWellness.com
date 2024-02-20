@@ -2,10 +2,12 @@ import React from 'react'
 
 import pmImages from '../app/assets/beforeAfter/pm/pm.js'
 import BeforeAfterCard from '../components/BeforeAfterCard.js'
+import SubHeader from '../components/SubHeader.js'
 
 const BeforeAndAfterPM = () => {
     return (
         <div>
+            <SubHeader current='Before and After PM' />
             {pmImages.map((image) => (
                 <BeforeAfterCard
                     key={image.clientId}

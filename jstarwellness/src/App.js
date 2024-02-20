@@ -23,8 +23,14 @@ function App() {
                     <Route path='contact' element={<ContactPage />} />
                     <Route path='about' element={<AboutPage />} />
                     <Route path='gallery' element={<Gallery />} />
-                    <Route path='BeforeAfterNT' element={<BeforeAfterNT />} />
-                    <Route path='BeforeAfterPM' element={<BeforeAfterPM />} />
+                    <Route
+                        path='gallery/BeforeAfterNT'
+                        element={<BeforeAfterNT />}
+                    />
+                    <Route
+                        path='gallery/BeforeAfterPM'
+                        element={<BeforeAfterPM />}
+                    />
                 </Routes>
                 <Footer />
             </div>

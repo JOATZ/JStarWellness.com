@@ -2,6 +2,7 @@ import React from 'react'
 
 import ntImages from '../app/assets/beforeAfter/nt/nt.js'
 import BeforeAfterCard from '../components/BeforeAfterCard.js'
+import SubHeader from '../components/SubHeader.js'
 
 const BeforeAndAfterNT = () => {
     return (
