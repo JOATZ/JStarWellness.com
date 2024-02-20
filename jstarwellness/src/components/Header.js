@@ -18,27 +18,54 @@ const Header = () => {
 
     return (
         <div>
-            <Row>
-                <Col md={{ size: 8, offset: 2 }}>
-                    <div className='top-panel'>
-                        <a
-                            role='button'
-                            className='btn btn-link'
-                            href='tel:+18052687565'
-                        >
-                            <i className='fa fa-phone' />
-                            1-805-268-7565
-                        </a>
-                        |
-                        <a
-                            role='button'
-                            className='btn btn-link'
-                            href='mailto:Stepup2shapeup@gmail.com'
-                        >
-                            <i className='fa fa-envelope-o' />
-                            Stepup2shapeup@gmail.com
-                        </a>
-                    </div>
+            <Row className='top-panel-row d-none d-xl-flex'>
+                <Col className='top-panel' lg={{ size: 5, offset: 2 }}>
+                    <a
+                        role='button'
+                        className='btn btn-link'
+                        href='tel:+18052687565'
+                    >
+                        <i className='fa fa-phone' />
+                        1-805-268-7565
+                    </a>
+                    |
+                    <a
+                        role='button'
+                        className='btn btn-link'
+                        href='mailto:Stepup2shapeup@gmail.com'
+                    >
+                        <i className='fa fa-envelope-o' />
+                        Stepup2shapeup@gmail.com
+                    </a>
+                </Col>
+                <Col className='top-panel text-end' lg={{ size: 3 }}>
+                    <a
+                        href='https://facebook.com'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='me-2'
+                    >
+                        <i
+                            className='fa fa-facebook-official'
+                            aria-hidden='true'
+                        ></i>
+                    </a>
+                    <a
+                        href='https://instagram.com'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='me-2'
+                    >
+                        <i className='fa fa-instagram' aria-hidden='true'></i>
+                    </a>
+                    <a
+                        href='https://twitter.com'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='me-2'
+                    >
+                        <i className='fa fa-twitter' aria-hidden='true'></i>
+                    </a>
                 </Col>
             </Row>
             <Navbar dark sticky='top' expand='md'>

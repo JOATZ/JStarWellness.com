@@ -14,17 +14,13 @@ h3,
 .card-body > .card-title {
   font-family: 'Euphoria Script';
 }
-
-.top-panel {
-  white-space: nowrap;
-}
-
+/*_____HEADER TOP PANEL_____*/
 .top-panel a {
   display: inline;
   color: grey;
   text-decoration: none;
 }
-
+/*-----------------------------------------*/
 .card-title {
   font-weight: 500;
   font-size: 1.25rem;
