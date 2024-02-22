@@ -8,20 +8,20 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const slidesData = [
     {
         id: 1,
-        title: 'Slide Title of Service',
+        title: 'Slide Title of Service 1',
         description: 'Slide Description of Service',
         image: Pic
     },
     {
         id: 2,
-        title: 'Slide Two',
-        description: 'Slide Description of Service',
+        title: 'Slide Title of Service 2',
+        description: 'Slide Description of Service 2',
         image: Pic
     },
     {
         id: 3,
         title: 'Slide Three',
-        description: 'Slide Description of Service',
+        description: 'Slide Description of Service 3',
         image: Pic
     }
 ]
@@ -31,11 +31,13 @@ const HomeCarousel = () => {
         autoPlay: true,
         emulateTouch: true,
         infiniteLoop: true,
-        interval: 4000,
+        interval: 5000,
         showArrows: true,
         showThumbs: false,
         showIndicators: true,
-        showStatus: false
+        showStatus: false,
+        transitionTime: 2000,
+        animationHandler: 'fade'
     }
 
     return (
