@@ -31,7 +31,7 @@ const HomeCarousel = () => {
         autoPlay: true,
         emulateTouch: true,
         infiniteLoop: true,
-        interval: 5000,
+        interval: 4000,
         showArrows: true,
         showThumbs: false,
         showIndicators: true,
