@@ -88,97 +88,25 @@ h2 {
 
 /* 7.2 Main Slider
 -------------------------------------------------------------- */
-.slider_wrap .rev_slider_wrapper {
-  z-index: 0;
-}
-.tparrows.default {
-  background: none;
-  background-color: transparent;
-  line-height: 40px;
-}
-.tparrows.default:before {
-  font-family: "fontello";
-  font-size: 3em;
-}
-.tp-leftarrow.default:before {
-  content: '\e837';
-}
-.tp-rightarrow.default:before {
-  content: '\e836';
-}
-.slider_with_over_content .tparrows {
-  display: none!important;
-}
-.slider_with_over_content .tp-rightarrow {
-  left: 60%!important;
-}
-.tp-bullets.simplebullets.round .bullet {
-  background: none;
-  margin-left: 16px;
-  border: 1px solid transparent;
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-.tp-bullets.simplebullets.round .bullet.selected {
-  background-color: transparent!important;
-  border-width: 1px;
-  border-style: solid;
-}
-.slider_with_over_content {
+.slide-container {
   position: relative;
+  text-align: center; /* Center children */
 }
-.slider_over_content {
+
+.slide-info {
   position: absolute;
-  z-index: 1;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 40%;
-  z-webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -ms-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the title's dimensions */
+  color: black; /* Assuming you want the text in white */
+  font-size: 2rem; /* Example font size */
+  z-index: 2; /* Ensure it's above the image */
 }
-.slider_over_content_inner {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  padding: 2em 3em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.slider_over_button {
-  display: none;
-  position: absolute;
-  left: -30px;
-  top: 50%;
-  margin-top: -15px;
-  width: 26px;
-  height: 30px;
-  line-height: 28px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-}
-.slider_over_close {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  font-size: 1.2em;
-  text-align: center;
-  cursor: pointer;
+
+.slick-prev, .slick-next {
+  font-size: 10px;
+  color: black !important; /* Change color to ensure visibility */
+    z-index: 1; /* Ensure arrows are above other content */
 }
 
 /* Before and After Cards in Gallery-------------------------------------------------------------- */

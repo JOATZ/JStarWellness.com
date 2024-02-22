@@ -10,10 +10,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-social/bootstrap-social.css'
 import 'font-awesome/css/font-awesome.css'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
-import 'typeface-lobster'
 import 'typeface-open-sans'
 
 const container = document.getElementById('root')

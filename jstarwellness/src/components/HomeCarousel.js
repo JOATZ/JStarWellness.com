@@ -1,53 +1,57 @@
 import React from 'react'
-import Slider from 'react-slick'
+import { Carousel } from 'react-responsive-carousel'
 
 import Pic from '../app/assets/img/1170x700.jpg'
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const slidesData = [
     {
         id: 1,
-        title: 'Slide One',
+        title: 'Slide Title of Service',
+        description: 'Slide Description of Service',
         image: Pic
     },
     {
         id: 2,
         title: 'Slide Two',
+        description: 'Slide Description of Service',
         image: Pic
     },
     {
         id: 3,
         title: 'Slide Three',
+        description: 'Slide Description of Service',
         image: Pic
     }
 ]
 
 const HomeCarousel = () => {
     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 8000,
-        cssEase: 'linear',
-        arrows: true
+        emulateTouch: true,
+        infinite: true,
+        interval: 8000,
+        showArrows: true,
+        showThumbs: false,
+        showIndicators: true,
+        showStatus: false
     }
 
     return (
-        <div
-            className='slider-container'
-            style={{ maxHeight: '500px', overflow: 'hidden' }}
-        >
-            <Slider {...settings}>
-                {slidesData.map((slide) => (
-                    <div key={slide.id}>
-                        <img src={slide.image} alt={slide.title} />
-                        <h2>{slide.title}</h2>
+        <Carousel {...settings}>
+            {slidesData.map((slide) => (
+                <div key={slide.id} className='slide-container'>
+                    <img src={slide.image} alt={slide.title} />
+                    <div className='slide-info'>
+                        <h1 className='slide-title'>{slide.title}</h1>
+                        <h4 className='slide-descrih4tion'>
+                            {slide.description}
+                        </h4>
                     </div>
-                ))}
-            </Slider>
-        </div>
+                </div>
+            ))}
+        </Carousel>
     )
 }
 
