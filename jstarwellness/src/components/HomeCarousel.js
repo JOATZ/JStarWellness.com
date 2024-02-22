@@ -29,15 +29,15 @@ const slidesData = [
 const HomeCarousel = () => {
     const settings = {
         autoPlay: true,
-        emulateTouch: true,
         infiniteLoop: true,
-        interval: 5000,
+        interval: 4500,
         showArrows: true,
         showThumbs: false,
         showIndicators: true,
         showStatus: false,
-        transitionTime: 2000,
-        animationHandler: 'fade'
+        transitionTime: 1500,
+        animationHandler: 'fade',
+        stopOnHover: false
     }
 
     return (
