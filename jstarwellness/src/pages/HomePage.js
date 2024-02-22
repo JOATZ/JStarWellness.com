@@ -37,7 +37,7 @@ const HomePage = () => {
                     Book a Service
                 </Button>
                 <Link
-                    to='/contact'
+                    to='/about'
                     className='btn btn-outline'
                     style={{
                         color: '#80428b',

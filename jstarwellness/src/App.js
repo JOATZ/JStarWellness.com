@@ -10,6 +10,7 @@ import BeforeAndAfterPM from './pages/BeforeAndAfterPM'
 import ContactPage from './pages/ContactPage'
 import Gallery from './pages/Gallery'
 import HomePage from './pages/HomePage'
+import Services from './pages/Services'
 
 import './App.css'
 
@@ -18,20 +19,23 @@ function App() {
         <Provider store={store}>
             <div className='App'>
                 <Header />
-                <Routes>
-                    <Route path='/' element={<HomePage />} />
-                    <Route path='contact' element={<ContactPage />} />
-                    <Route path='about' element={<AboutPage />} />
-                    <Route path='gallery' element={<Gallery />} />
-                    <Route
-                        path='BeforeAndAfterNT'
-                        element={<BeforeAndAfterNT />}
-                    />
-                    <Route
-                        path='BeforeAndAfterPM'
-                        element={<BeforeAndAfterPM />}
-                    />
-                </Routes>
+                <div className='app-content'>
+                    <Routes>
+                        <Route path='/' element={<HomePage />} />
+                        <Route path='services' element={<Services />} />
+                        <Route path='contact' element={<ContactPage />} />
+                        <Route path='about' element={<AboutPage />} />
+                        <Route path='gallery' element={<Gallery />} />
+                        <Route
+                            path='BeforeAndAfterNT'
+                            element={<BeforeAndAfterNT />}
+                        />
+                        <Route
+                            path='BeforeAndAfterPM'
+                            element={<BeforeAndAfterPM />}
+                        />
+                    </Routes>
+                </div>
                 <Footer />
             </div>
         </Provider>

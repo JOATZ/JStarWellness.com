@@ -4,6 +4,41 @@
   color: hsl(193, 95%, 68%);
 }
 
+/* Basic CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  margin-left: 5px;
+  margin-right: 5px;
+  
+}
+
+/*------For Sticky Footer--------*/
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+}
+/*------Global Fonts--------*/
 body {
   font-family: 'Euphoria Script','Open Sans', sans-serif;
 }
@@ -96,21 +131,21 @@ h2 {
 .slide img {
   height: 100%;
   width: auto;
-  object-fit: cover; /* Adjust this as needed to handle how images should scale */
+  object-fit: cover; 
 }
 
 .custom-carousel .carousel .slide {
-  position: relative; /* This ensures absolute positioning within the slide */
+  position: relative; 
 }
 
 .slide-info {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for the title's dimensions */
-  color: black; /* Assuming you want the text in white */
-  font-size: 2rem; /* Example font size */
-  z-index: 2; /* Ensure it's above the image */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: black;
+  font-size: 2rem; 
+  z-index: 2; 
 }
 /*---------Home Page Buttons---------*/
 .home-page-buttons {
