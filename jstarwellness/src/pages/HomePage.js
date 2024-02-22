@@ -8,9 +8,10 @@ const HomePage = () => {
     return (
         <>
             <HomeCarousel />
-            <Container>
+            <Container className='home-page-buttons'>
                 <Button
                     tag='a'
+                    target='_blank'
                     href='https://jstar-wellness.square.site/s/shop'
                     style={{
                         backgroundColor: '#80428b',

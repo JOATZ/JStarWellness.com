@@ -88,9 +88,19 @@ h2 {
 
 /* 7.2 Main Slider
 -------------------------------------------------------------- */
-.slide-container {
-  position: relative;
-  text-align: center; /* Center children */
+.slide-container, .carousel {
+  height: 60vh;
+  max-width: 100%;
+}
+
+.slide img {
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* Adjust this as needed to handle how images should scale */
+}
+
+.custom-carousel .carousel .slide {
+  position: relative; /* This ensures absolute positioning within the slide */
 }
 
 .slide-info {
@@ -102,13 +112,13 @@ h2 {
   font-size: 2rem; /* Example font size */
   z-index: 2; /* Ensure it's above the image */
 }
-
-.slick-prev, .slick-next {
-  font-size: 10px;
-  color: black !important; /* Change color to ensure visibility */
-    z-index: 1; /* Ensure arrows are above other content */
+/*---------Home Page Buttons---------*/
+.home-page-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
-
 /* Before and After Cards in Gallery-------------------------------------------------------------- */
 
 .before-after-card {

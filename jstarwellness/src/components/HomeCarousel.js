@@ -28,10 +28,10 @@ const slidesData = [
 
 const HomeCarousel = () => {
     const settings = {
-        autoplay: true,
+        autoPlay: true,
         emulateTouch: true,
-        infinite: true,
-        interval: 8000,
+        infiniteLoop: true,
+        interval: 5000,
         showArrows: true,
         showThumbs: false,
         showIndicators: true,
