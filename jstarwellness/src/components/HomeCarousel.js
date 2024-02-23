@@ -1,58 +1,95 @@
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
+import React, { useState } from 'react'
+import {
+    Carousel,
+    CarouselCaption,
+    CarouselControl,
+    CarouselIndicators,
+    CarouselItem
+} from 'reactstrap'
 
 import Pic from '../app/assets/img/1170x700.jpg'
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-
-const slidesData = [
+const items = [
     {
-        id: 1,
-        title: 'Slide Title of Service 1',
-        description: 'Slide Description of Service',
-        image: Pic
+        src: Pic,
+        altText: 'Slide 1',
+        caption: 'Slide 1',
+        key: 1
     },
     {
-        id: 2,
-        title: 'Slide Title of Service 2',
-        description: 'Slide Description of Service 2',
-        image: Pic
+        src: Pic,
+        altText: 'Slide 2',
+        caption: 'Slide 2',
+        key: 2
     },
     {
-        id: 3,
-        title: 'Slide Three',
-        description: 'Slide Description of Service 3',
-        image: Pic
+        src: Pic,
+        altText: 'Slide 3',
+        caption: 'Slide 3',
+        key: 3
     }
 ]
 
-const HomeCarousel = () => {
-    const settings = {
-        autoPlay: true,
-        infiniteLoop: true,
-        interval: 4500,
-        showArrows: true,
-        showThumbs: false,
-        showIndicators: true,
-        showStatus: false,
-        transitionTime: 1500,
-        animationHandler: 'fade',
-        stopOnHover: false
+const HomeCarousel = (args) => {
+    const [activeIndex, setActiveIndex] = useState(0)
+    const [animating, setAnimating] = useState(false)
+
+    const next = () => {
+        if (animating) return
+        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1
+        setActiveIndex(nextIndex)
     }
 
+    const previous = () => {
+        if (animating) return
+        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1
+        setActiveIndex(nextIndex)
+    }
+
+    const goToIndex = (newIndex) => {
+        if (animating) return
+        setActiveIndex(newIndex)
+    }
+
+    const slides = items.map((item) => {
+        return (
+            <CarouselItem
+                onExiting={() => setAnimating(true)}
+                onExited={() => setAnimating(false)}
+                key={item.src}
+            >
+                <img src={item.src} alt={item.altText} />
+                <CarouselCaption
+                    captionText={item.caption}
+                    captionHeader={item.caption}
+                />
+            </CarouselItem>
+        )
+    })
+
     return (
-        <Carousel {...settings}>
-            {slidesData.map((slide) => (
-                <div key={slide.id} className='slide-container'>
-                    <img src={slide.image} alt={slide.title} />
-                    <div className='slide-info'>
-                        <h1 className='slide-title'>{slide.title}</h1>
-                        <h4 className='slide-descrih4tion'>
-                            {slide.description}
-                        </h4>
-                    </div>
-                </div>
-            ))}
+        <Carousel
+            activeIndex={activeIndex}
+            next={next}
+            previous={previous}
+            {...args}
+        >
+            <CarouselIndicators
+                items={items}
+                activeIndex={activeIndex}
+                onClickHandler={goToIndex}
+            />
+            {slides}
+            <CarouselControl
+                direction='prev'
+                directionText='Previous'
+                onClickHandler={previous}
+            />
+            <CarouselControl
+                direction='next'
+                directionText='Next'
+                onClickHandler={next}
+            />
         </Carousel>
     )
 }

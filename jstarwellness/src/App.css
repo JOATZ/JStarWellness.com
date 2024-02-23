@@ -121,31 +121,12 @@ h2 {
   transition: 300ms ease-in;
 }
 
-/* 7.2 Main Slider
--------------------------------------------------------------- */
-.slide-container, .carousel {
-  height: 60vh;
-  max-width: 100%;
-}
-
-.slide img {
-  height: 100%;
-  width: auto;
-  object-fit: cover; 
-}
-
-.custom-carousel .carousel .slide {
-  position: relative; 
-}
-
-.slide-info {
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: black;
-  font-size: 2rem; 
-  z-index: 2; 
+/* ----------Home Page Carousel-------------------- */
+.carousel-item img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
 }
 /*---------Home Page Buttons---------*/
 .home-page-buttons {
