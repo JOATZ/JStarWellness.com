@@ -28,7 +28,12 @@ const ServiceTypeCards = () => {
                         <CardText>
                             Specialized services in paramedical artistry.
                         </CardText>
-                        <Button variant='primary' style={{ borderRadius: '0' }}>
+                        <Button
+                            style={{
+                                display: 'block',
+                                margin: '0 auto'
+                            }}
+                        >
                             From $$$$$
                         </Button>
                     </CardBody>
@@ -43,18 +48,17 @@ const ServiceTypeCards = () => {
                         alt='Card image cap'
                     />
                     <Button
-                        variant='primary'
                         style={{
                             position: 'absolute',
-                            bottom: '90px', // Adjust as needed
-                            right: '35%', // Adjust as needed
-                            variant: 'primary',
-                            borderRadius: '0'
+                            bottom: '115px',
+                            right: '35%',
+                            variant: 'primary'
                         }}
                     >
                         From $$$$$
                     </Button>
                     <CardBody>
+                        <br />
                         <CardTitle tag='h5'>Nutrition and Training</CardTitle>
                         <CardText>
                             Comprehensive guidance on nutrition and fitness.
@@ -70,8 +74,7 @@ const ServiceTypeCards = () => {
                             position: 'absolute',
                             bottom: '55%', // Adjust as needed
                             right: '35%', // Adjust as needed
-                            variant: 'primary',
-                            borderRadius: '0'
+                            variant: 'primary'
                         }}
                     >
                         From $$$$$

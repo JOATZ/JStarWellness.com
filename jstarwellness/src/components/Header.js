@@ -17,7 +17,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <div>
+        <div className='header-div'>
             <Row className='top-panel-row d-none d-xl-flex'>
                 <Col className='top-panel' lg={{ size: 5, offset: 2 }}>
                     <a

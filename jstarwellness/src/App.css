@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+:root {
+  --primary-dark-color: #80428b;
+  --primary-light-color: #dea4e9;
+  --accent-color: #f0c808;
+  --text-color: #333;
+}
+
 
 .App-link {
-  color: hsl(193, 95%, 68%);
+  color: var(--primay-dark-color);
 }
 
 /* Basic CSS Reset */
@@ -49,38 +56,28 @@ h3,
 .card-body > .card-title {
   font-family: 'sans-serif';
 }
-/*_____HEADER TOP PANEL_____*/
+/*-----HEADER-----*/
+.header-div {
+  background-color: var(--primary-light-color);
+  text-align: center;
+}
+
+.top-panel-row {
+  background-color: var(--primary-light-color);
+}
+
 .top-panel a {
   display: inline;
-  color: grey;
+  color: var(--primary-dark-color);
   text-decoration: none;
 }
-/*-----------------------------------------*/
-.card-title {
-  font-weight: 500;
-  font-size: 1.25rem;
+
+.navbar, .navbar a, .navbar * {
+  color: var(--primary-dark-color); 
 }
 
-h2 {
-  color: #3046c5;
-}
-
-.card-img-overlay .card-title {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px;
-}
-
-.site-footer {
-  background-image: rgb();
-  padding: 20px 0;
-  margin-top: 2rem;
-  background-color:#80428b;
+.navbar-toggler, .navbar-toggler-icon {
+  border-color: var(--primary-dark-color) !important;
 }
 
 .navbar-brand {
@@ -96,9 +93,52 @@ h2 {
 }
 
 .navbar-dark {
-  background-color:#80428b;
+  background-color:var(--primary-light-color);
   margin-bottom: 2rem;
   min-height: 8rem;
+}
+/*---------Home Page Buttons---------*/
+.home-page-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+/*------Home Page Intro-------*/
+.home-page-header {
+  font-family: 'Euphoria Script';
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem auto; /* Updated to auto to center the content */
+}
+.card .btn {
+ border-radius: 0;
+}
+
+.card {
+  box-shadow: 4px 4px 8px 0 var(--primary-dark-color);
+}
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-image: rgb();
+  padding: 20px 0;
+  margin-top: 2rem;
+  background-color: var(--primary-light-color);
 }
 
 .page-enter {
@@ -128,20 +168,7 @@ h2 {
   height: auto;
   max-height: 500px;
 }
-/*---------Home Page Buttons---------*/
-.home-page-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-}
-/*------Home Page Intro-------*/
-.home-page-header {
-  font-family: 'Euphoria Script';
-  font-size: 3rem;
-  text-align: center;
-  margin: 2rem auto; /* Updated to auto to center the content */
-}
+
 
 .home-page-intro {
   font-family: 'sans-serif';
