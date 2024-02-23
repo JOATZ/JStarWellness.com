@@ -2,9 +2,12 @@ import React from 'react'
 import { Card, Col, Row } from 'reactstrap'
 
 const ServiceItem = ({ name, description, lowPrice, highPrice, src }) => (
-    <Card className='service-item mb-3'>
+    <Card className='service-item mb-2 mt-2'>
         <Row noGutters>
-            <Col md='4' className='text-end'>
+            <Col
+                md='4'
+                className='d-flex justify-content-center align-items-center'
+            >
                 <img
                     src={src}
                     alt={`Service: ${name}`}
@@ -21,7 +24,8 @@ const ServiceItem = ({ name, description, lowPrice, highPrice, src }) => (
                     <h5 style={{ fontWeight: 'bold' }}>{name}</h5>
                     <p>{description}</p>
                     <p className='text-muted'>
-                        Price: ${lowPrice} - ${highPrice}
+                        Price: ${lowPrice}
+                        {highPrice ? ` - ${highPrice}` : ''}
                     </p>
                 </div>
             </Col>

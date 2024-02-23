@@ -1,11 +1,11 @@
 const SERVICES = [
     {
         id: 1,
-        name: 'Nutrition Coaching',
+        name: 'Color Match Patch Test',
         description:
-            'Tailored nutrition advice and plans to meet your health and fitness goals.',
-        lowPrice: 100,
-        highPrice: 300,
+            'Needed for what?     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 40,
+        highPrice: null,
         src: '/logo.webp'
     },
     {
@@ -19,29 +19,92 @@ const SERVICES = [
     },
     {
         id: 3,
-        name: 'Hair Tissue Mineral Analysis',
+        name: 'Scar Reduction & Revision',
         description:
-            'Comprehensive testing to detect mineral imbalances and heavy metal toxicity.',
-        lowPrice: 200,
-        highPrice: 400,
-        src: '/logo.webp'
-    },
-    {
-        id: 4,
-        name: 'Paramedical Procedures',
-        description:
-            'Specialized paramedical procedures to enhance natural beauty and confidence.',
-        lowPrice: 250,
-        highPrice: 500,
+            'Please send pictures or schedule a free consultation. Discount given for more than 1 body part. Contact for pricing. This price range includes ink and inkless services. Needles produce micro traumas in the skin that causes your body to heal itself. It produces collagen and repairs the site causing skin lightening, tightening, circulation, reduced appearance, and texture improvement.',
+        lowPrice: 120,
+        highPrice: 1200,
         src: '/logo.webp'
     },
     {
         id: 5,
-        name: 'Holistic Wellness Consultation',
+        name: 'Stretch Mark Collagen Induction Inkless Camouflage 1 Body part',
         description:
-            'One-on-one consultations to create a holistic approach to your well-being.',
-        lowPrice: 120,
-        highPrice: 320,
+            'Please send pictures or schedule a free consultation. Discount given for more than 1 body part. Contact for pricing. Needles produce micro traumas in the skin that causes your body to heal itself. It produces collagen and repairs the site causing skin lightening, tightening, circulation, reduced appearance, and texture improvement',
+        lowPrice: 300,
+        highPrice: 900,
+        src: '/logo.webp'
+    },
+    {
+        id: 4,
+        name: 'Bodybuilding Competitor  nutrition, training, peak week Plans',
+        description:
+            'Detailed description... Price is per month, minimum two months prior to competition required.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: '240 per month (minimum 2 months)',
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 5,
+        name: '12-14 week online nutrition & training plan (non competitor)',
+        description:
+            'Detailed description... Price is per month, minimum two months prior to competition required.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 249,
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 6,
+        name: 'Nutrition Lifestyle Plan 12-14 Weeks',
+        description:
+            'Detailed description... Price is per month, minimum two months prior to competition required.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 155,
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 7,
+        name: 'Nutrition Lifestyle Plan 12-14 Weeks',
+        description:
+            'Detailed description... Price is per month, minimum two months prior to competition required.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 155,
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 8,
+        name: 'Sports Specific Athlete nutrition & training plan 12-14 weeks',
+        description:
+            'Detailed description... Price is per month, minimum two months prior to competition required.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 289,
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 9,
+        name: 'Online 12-14 week training plan',
+        description:
+            'Detailed description... Price is per month, minimum two months prior to competition required.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 155,
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 10,
+        name: 'Hair Tissue Mineral Analysis',
+        description:
+            '1 hour consultation, detox plan as pertains to results Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        lowPrice: 479,
+        highPrice: null,
+        src: '/logo.webp'
+    },
+    {
+        id: 11,
+        name: 'Transition Life Style Plan',
+        description:
+            'maybe somehting like this to indicate a bundle? This comprehensive package includes a Hair Tissue Mineral Analysis to assess your body’s mineral composition and detect any imbalances or deficiencies. Based on the results, a personalized detox plan is formulated to address these issues. Additionally, the package offers a 1-hour personal consultation to discuss your results and plan in detail, ensuring a tailored approach to your transition lifestyle plan.',
+        lowPrice: 687,
+        highPrice: null,
         src: '/logo.webp'
     }
 ]
