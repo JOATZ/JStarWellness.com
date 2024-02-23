@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+    Button,
     Card,
     CardBody,
     CardImg,
@@ -27,6 +28,9 @@ const ServiceTypeCards = () => {
                         <CardText>
                             Specialized services in paramedical artistry.
                         </CardText>
+                        <Button variant='primary' style={{ borderRadius: '0' }}>
+                            From $$$$$
+                        </Button>
                     </CardBody>
                 </Card>
             </Col>
@@ -38,6 +42,18 @@ const ServiceTypeCards = () => {
                         src={CardPic}
                         alt='Card image cap'
                     />
+                    <Button
+                        variant='primary'
+                        style={{
+                            position: 'absolute',
+                            bottom: '90px', // Adjust as needed
+                            right: '35%', // Adjust as needed
+                            variant: 'primary',
+                            borderRadius: '0'
+                        }}
+                    >
+                        From $$$$$
+                    </Button>
                     <CardBody>
                         <CardTitle tag='h5'>Nutrition and Training</CardTitle>
                         <CardText>
@@ -48,12 +64,25 @@ const ServiceTypeCards = () => {
             </Col>
             <Col md='4' style={{ maxWidth: '370px', margin: '0 10px' }}>
                 <Card>
+                    <Button
+                        variant='primary'
+                        style={{
+                            position: 'absolute',
+                            bottom: '55%', // Adjust as needed
+                            right: '35%', // Adjust as needed
+                            variant: 'primary',
+                            borderRadius: '0'
+                        }}
+                    >
+                        From $$$$$
+                    </Button>
                     <CardImg
                         top
                         style={{ width: '100%' }}
                         src={CardPic}
                         alt='Card image cap'
                     />
+
                     <CardBody>
                         <CardTitle tag='h5'>
                             Hair Tissue Mineral Analysis
