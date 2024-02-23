@@ -10,7 +10,7 @@ import BeforeAndAfterPM from './pages/BeforeAndAfterPM'
 import ContactPage from './pages/ContactPage'
 import Gallery from './pages/Gallery'
 import HomePage from './pages/HomePage'
-import Services from './pages/Services'
+import ServicePage from './pages/ServicePage'
 
 import './App.css'
 
@@ -22,7 +22,7 @@ function App() {
                 <div className='app-content'>
                     <Routes>
                         <Route path='/' element={<HomePage />} />
-                        <Route path='services' element={<Services />} />
+                        <Route path='services' element={<ServicePage />} />
                         <Route path='contact' element={<ContactPage />} />
                         <Route path='about' element={<AboutPage />} />
                         <Route path='gallery' element={<Gallery />} />
