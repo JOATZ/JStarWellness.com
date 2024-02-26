@@ -9,7 +9,7 @@ const HomePage = () => {
         <>
             <HomeCarousel />
             <h1 className='home-page-header'>Rediscover Your Confidence!</h1>
-            <h2 className='home-page-intro'>
+            <p className='home-page-intro'>
                 Embark on a journey of holistic wellness with our comprehensive
                 services. With over two decades of experience in the wellness
                 industry, our personalized nutrition and exercise coaching are
@@ -21,7 +21,7 @@ const HomePage = () => {
                 consultations, we are committed to empowering you to embrace
                 your season, rediscover your confidence, and achieve holistic
                 well-being.
-            </h2>
+            </p>
             <Container className='home-page-buttons'>
                 <Button
                     tag='a'

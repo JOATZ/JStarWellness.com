@@ -25,8 +25,7 @@ const Header = () => {
                         className='btn btn-link'
                         href='tel:+18052687565'
                     >
-                        <i className='fa fa-phone' />
-                        1-805-268-7565
+                        <i className='fa fa-phone' /> 1-805-268-7565
                     </a>
                     |
                     <a
@@ -34,7 +33,7 @@ const Header = () => {
                         className='btn btn-link'
                         href='mailto:Stepup2shapeup@gmail.com'
                     >
-                        <i className='fa fa-envelope-o' />
+                        <i className='fa fa-envelope-o' />{' '}
                         Stepup2shapeup@gmail.com
                     </a>
                 </Col>
@@ -49,7 +48,7 @@ const Header = () => {
                             className='fa fa-facebook-official'
                             aria-hidden='true'
                         ></i>
-                    </a>
+                    </a>{' '}
                     <a
                         href='http://www.instagram.com/gotyoucovered805'
                         target='_blank'
@@ -57,7 +56,7 @@ const Header = () => {
                         className='me-2'
                     >
                         <i className='fa fa-instagram' aria-hidden='true'></i>
-                    </a>
+                    </a>{' '}
                     <a
                         href='https://twitter.com'
                         target='_blank'

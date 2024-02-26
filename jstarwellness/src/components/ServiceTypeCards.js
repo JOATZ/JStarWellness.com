@@ -11,6 +11,7 @@ import {
 } from 'reactstrap'
 
 import CardPic from '../app/assets/img/370x370.jpg'
+import SERVICES from '../app/assets/servicesList/SERVICES.js'
 
 const ServiceTypeCards = () => {
     return (
@@ -26,7 +27,7 @@ const ServiceTypeCards = () => {
                     <CardBody>
                         <CardTitle tag='h5'>Paramedical Artistry</CardTitle>
                         <CardText>
-                            Specialized services in paramedical artistry.
+                            Specialized services in Paramedicla Artistry.
                         </CardText>
                         <Button
                             style={{
@@ -34,7 +35,7 @@ const ServiceTypeCards = () => {
                                 margin: '0 auto'
                             }}
                         >
-                            From $$$$$
+                            From $125
                         </Button>
                     </CardBody>
                 </Card>
@@ -51,17 +52,19 @@ const ServiceTypeCards = () => {
                         style={{
                             position: 'absolute',
                             bottom: '115px',
-                            right: '35%',
-                            variant: 'primary'
+                            right: '20%',
+                            variant: 'primary',
+                            width: '200px'
                         }}
                     >
-                        From $$$$$
+                        From $155
                     </Button>
                     <CardBody>
                         <br />
                         <CardTitle tag='h5'>Nutrition and Training</CardTitle>
                         <CardText>
-                            Comprehensive guidance on nutrition and fitness.
+                            Comprehensive guidance on nutrition and fitness for
+                            all performance levels.
                         </CardText>
                     </CardBody>
                 </Card>
@@ -77,7 +80,7 @@ const ServiceTypeCards = () => {
                             variant: 'primary'
                         }}
                     >
-                        From $$$$$
+                        From $479
                     </Button>
                     <CardImg
                         top
@@ -91,7 +94,9 @@ const ServiceTypeCards = () => {
                             Hair Tissue Mineral Analysis
                         </CardTitle>
                         <CardText>
-                            Detailed analysis of hair tissue minerals.
+                            Detailed analysis of hair tissue minerals. includes
+                            a 1 hour consultation and detox plan as pertains to
+                            results.
                         </CardText>
                     </CardBody>
                 </Card>
