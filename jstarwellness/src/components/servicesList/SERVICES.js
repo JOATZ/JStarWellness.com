@@ -93,7 +93,7 @@ const SERVICES = [
         id: 9,
         name: 'Hair Tissue Mineral Analysis',
         description:
-            '1 hour consultation, detox plan as pertains to results Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'Uncover the raw data of whats happening inside your body through Hair Tissue Mineral Analysis Testing. This revealing service provides insights into heavy metals, food oxidation, mineral ratios, and their connections to hormones. A must-have resource that goes beyond traditional tests. Includes a 1 hour consultation and a detox plan as pertains to results.',
         lowPrice: 479,
         highPrice: null,
         serviceType: 'HTA',

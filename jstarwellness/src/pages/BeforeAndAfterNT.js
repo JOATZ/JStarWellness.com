@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'reactstrap' // Import Row and Col
 
-import ntImages from '../app/assets/beforeAfter/nt/nt.js'
-import BeforeAfterCard from '../components/BeforeAfterCard.js'
+import BeforeAfterCard from '../components/beforeAfter/BeforeAfterCard.js'
+import ntImages from '../components/beforeAfter/nt/nt.js'
 import SubHeader from '../components/SubHeader.js'
 
 const BeforeAndAfterNT = () => {

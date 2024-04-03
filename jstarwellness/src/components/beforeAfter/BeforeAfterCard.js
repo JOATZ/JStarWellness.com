@@ -10,12 +10,8 @@ import {
 
 const BeforeAfterCard = ({ headline, author, content, src }) => (
     <Card className='before-after-card'>
-        <CardImg
-            top
-            width='100%'
-            src={src}
-            alt={`Before and After ${headline}`}
-        />
+        <CardImg top src={src} alt={`Before and After ${headline}`} />
+
         <CardBody>
             <CardTitle tag='h5'>{headline}</CardTitle>
             <CardText>{content}</CardText>

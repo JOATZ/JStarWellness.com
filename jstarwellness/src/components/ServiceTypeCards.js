@@ -11,7 +11,7 @@ import {
 } from 'reactstrap'
 
 import CardPic from '../app/assets/img/370x370.jpg'
-import SERVICES from '../app/assets/servicesList/SERVICES.js'
+import SERVICES from './servicesList/SERVICES.js'
 
 const ServiceTypeCards = () => {
     return (

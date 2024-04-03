@@ -1,8 +1,8 @@
 import React from 'react'
-import { Col, Row } from 'reactstrap' // Import Row and Col
+import { Col, Row } from 'reactstrap'
 
-import pmImages from '../app/assets/beforeAfter/pm/pm.js'
-import BeforeAfterCard from '../components/BeforeAfterCard.js'
+import BeforeAfterCard from '../components/beforeAfter/BeforeAfterCard.js'
+import pmImages from '../components/beforeAfter/pm/pm.js'
 import SubHeader from '../components/SubHeader.js'
 
 const BeforeAndAfterPM = () => {
