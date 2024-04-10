@@ -30,9 +30,9 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <Navbar dark sticky='top' expand='md'>
+        <Navbar dark sticky='top' expand='lg'>
             <Container>
-                <Row className='top-panel-row d-none d-xl-flex'>
+                <Row className='top-panel-row d-none d-lg-flex'>
                     <Col className='top-panel'>
                         <a
                             role='button'

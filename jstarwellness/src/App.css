@@ -33,24 +33,6 @@
 .App-link {
   color: var(--primay-dark-color);
 }
-
-/* Basic CSS Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.row {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 /*------For Sticky Footer--------*/
 html, body, #root {
   height: 100%;
@@ -101,7 +83,7 @@ body {
 
 .navbar svg {
   margin-right: 3px;
-  ;
+  
 }
 
 .navbar-toggler, .navbar-toggler-icon {
