@@ -9,7 +9,6 @@ import SubHeader from '../components/SubHeader.js'
 const Gallery = () => {
     return (
         <>
-            <SubHeader title='Gallery' subtitle='Before and After' />
             <Row>
                 <Col md='6' xs='12' className='d-flex justify-content-center'>
                     <Link to='/BeforeAndAfterPM'>

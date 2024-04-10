@@ -1,13 +1,13 @@
 import { Col, Container, Row } from 'reactstrap'
 
 import ProfilePic from '../app/assets/img/JennProfilePic.webp'
-import Client1 from '../app/assets/img/nt/ClientComp1.jpg'
-import Client2 from '../app/assets/img/nt/ClientComp2.jpg'
-import Client4 from '../app/assets/img/nt/ClientComp4.jpg'
-import FitPic1 from '../app/assets/img/nt/Fit1.jpg'
-import JennComp1 from '../app/assets/img/nt/JennComp1.jpg'
-import JennComp2 from '../app/assets/img/nt/JennComp2.jpg'
-import Client3 from '../app/assets/img/nt/pic9.jpg'
+import Client1 from '../app/assets/img/nt/ClientComp1.webp'
+import Client2 from '../app/assets/img/nt/ClientComp2.webp'
+import Client4 from '../app/assets/img/nt/ClientComp4.webp'
+import FitPic1 from '../app/assets/img/nt/Fit1.webp'
+import JennComp1 from '../app/assets/img/nt/JennComp1.webp'
+import JennComp2 from '../app/assets/img/nt/JennComp2.webp'
+import Client3 from '../app/assets/img/nt/pic9.webp'
 
 const Profile = () => {
     return (

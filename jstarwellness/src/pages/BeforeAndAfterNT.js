@@ -8,7 +8,6 @@ import SubHeader from '../components/SubHeader.js'
 const BeforeAndAfterNT = () => {
     return (
         <div>
-            <SubHeader current='Before and After' />
             <Row>
                 {ntImages.map((image) => (
                     <Col
