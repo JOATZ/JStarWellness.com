@@ -67,6 +67,15 @@ html, body, #root {
 .app-content {
   flex: 1;
 }
+
+.site-footer a{
+  margin: 1px;
+}
+
+.footer-icons {
+  color: var(--primary-dark-color);
+  font-size: 2em;
+}
 /*------Global Fonts--------*/
 body {
   font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
@@ -88,6 +97,11 @@ body {
 
 .navbar, .navbar a, .navbar * {
   color: var(--primary-dark-color); 
+}
+
+.navbar svg {
+  margin-right: 3px;
+  ;
 }
 
 .navbar-toggler, .navbar-toggler-icon {

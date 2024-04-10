@@ -1,3 +1,11 @@
+import { IconContext } from 'react-icons'
+import {
+    FaCcPaypal,
+    FaFacebookSquare,
+    FaInstagramSquare,
+    FaTwitterSquare
+} from 'react-icons/fa'
+import { IoLogoVenmo } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
@@ -27,25 +35,38 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col xs='6' sm='3' className='text-center'>
-                        <h5>Social</h5>
-                        <a
-                            className='btn btn-social-icon btn-instagram'
-                            href='http://www.instagram.com/gotyoucovered805'
+                        <IconContext.Provider
+                            value={{
+                                className: 'footer-icons'
+                            }}
                         >
-                            <i className='fa fa-instagram' />
-                        </a>
-                        <a
-                            className='btn btn-social-icon btn-facebook'
-                            href='http://www.facebook.com/'
-                        >
-                            <i className='fa fa-facebook' />
-                        </a>
-                        <a
-                            className='btn btn-social-icon btn-twitter'
-                            href='http://twitter.com/'
-                        >
-                            <i className='fa fa-twitter' />
-                        </a>
+                            <h5>Social</h5>
+                            <a
+                                target='blank'
+                                href='http://www.instagram.com/gotyoucovered805'
+                            >
+                                <FaInstagramSquare />
+                            </a>
+                            <a target='blank' href='http://www.facebook.com/'>
+                                <FaFacebookSquare />
+                            </a>
+                            <a target='blank' href='http://twitter.com/'>
+                                <FaTwitterSquare />
+                            </a>
+                            <h5>Payments</h5>
+                            <a
+                                target='blank'
+                                href='http://paypal.com/Star3655@yahoo.com '
+                            >
+                                <FaCcPaypal />
+                            </a>
+                            <a
+                                target='blank'
+                                href='http://venmo.com/Sudavida1988'
+                            >
+                                <IoLogoVenmo />
+                            </a>
+                        </IconContext.Provider>
                     </Col>
                     <Col sm='4' className='text-center'>
                         <a
@@ -65,7 +86,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:Stepup2shapeup@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' />{' '}
+                            <i className='fa fa-envelope-o' />
                             Stepup2shapeup@gmail.com
                         </a>
                     </Col>

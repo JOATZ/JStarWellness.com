@@ -1,4 +1,16 @@
 import { useState } from 'react'
+import {
+    FaAddressCard,
+    FaCamera,
+    FaEnvelope,
+    FaFacebookSquare,
+    FaHome,
+    FaInfoCircle,
+    FaInstagramSquare,
+    FaList,
+    FaPhoneAlt,
+    FaTwitterSquare
+} from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import {
     Col,
@@ -27,7 +39,7 @@ const Header = () => {
                             className='btn btn-link'
                             href='tel:+18052687565'
                         >
-                            <i className='fa fa-phone' /> 1-805-268-7565
+                            <FaPhoneAlt /> 1-805-268-7565
                         </a>
                         |
                         <a
@@ -35,8 +47,7 @@ const Header = () => {
                             className='btn btn-link'
                             href='mailto:Stepup2shapeup@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' />{' '}
-                            Stepup2shapeup@gmail.com
+                            <FaEnvelope /> Stepup2shapeup@gmail.com
                         </a>
                     </Col>
                     <Col className='top-panel text-end' lg={{ size: 3 }}>
@@ -46,29 +57,23 @@ const Header = () => {
                             rel='noopener noreferrer'
                             className='me-2'
                         >
-                            <i
-                                className='fa fa-facebook-official'
-                                aria-hidden='true'
-                            ></i>
-                        </a>{' '}
+                            <FaFacebookSquare />
+                        </a>
                         <a
                             href='http://www.instagram.com/gotyoucovered805'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='me-2'
                         >
-                            <i
-                                className='fa fa-instagram'
-                                aria-hidden='true'
-                            ></i>
-                        </a>{' '}
+                            <FaInstagramSquare />
+                        </a>
                         <a
                             href='https://twitter.com'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='me-2'
                         >
-                            <i className='fa fa-twitter' aria-hidden='true'></i>
+                            <FaTwitterSquare />
                         </a>
                     </Col>
                 </Row>
@@ -88,28 +93,28 @@ const Header = () => {
                         <Nav className='ms-auto' navbar>
                             <NavItem>
                                 <NavLink className='nav-link' to='/'>
-                                    <i className='fa fa-home ha-lg ' />
+                                    <FaHome />
                                     Home
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className='nav-link' to='/services'>
-                                    <i className='fa fa-list fa-lg' /> Services
+                                    <FaList /> Services
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className='nav-link' to='/gallery'>
-                                    <i className='fa fa-list fa-lg' /> Gallery
+                                    <FaCamera /> Gallery
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className='nav-link' to='/about'>
-                                    <i className='fa fa-info fa-lg' /> About
+                                    <FaInfoCircle /> About
                                 </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className='nav-link' to='/contact'>
-                                    <i className='fa fa-address-card fa-lg' />{' '}
+                                    <FaAddressCard />
                                     Contact
                                 </NavLink>
                             </NavItem>
