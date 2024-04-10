@@ -46,7 +46,7 @@ html, body, #root {
   min-height: 100vh;
 }
 
-.app-content {
+.app-content {/*chekc this not sure its needed*/
   flex: 1;
 }
 
@@ -119,13 +119,6 @@ body {
   margin-bottom: 2rem;
   min-height: 8rem;
 }
-/*---------Home Page Buttons---------*/
-.home-page-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-}
 /*------Home Page Intro-------*/
 .home-page-header {
   font-family: 'EuphoriaScript','Open Sans', sans-serif;
@@ -133,7 +126,30 @@ body {
   text-align: center;
   margin: 2rem auto; 
 }
+/*---------Home Page Buttons---------*/
+.home-page-buttons {
+  font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
 
+.home-page-buttons .btn:nth-child(1) {
+  background-color: var(--primary-dark-color); 
+  color: white; 
+  border-color: var(--primary-dark-color); 
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.home-page-buttons .btn:nth-child(2) {
+  background-color: var(--primary-Light-color); 
+  color: var(--primary-dark-color);
+  border-color: var(--primary-dark-color);
+  margin: 10px;
+  font-size: 1.5rem;
+}
 .home-page-intro {
   font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
   font-size: min(4vw, 1.5rem);
@@ -141,15 +157,30 @@ body {
   margin: 2rem auto; 
   width: 50%; 
 }
-
-.card .btn {
- border-radius: 0;
-}
-
+/*---------HOMEPAGE CARDS-----------*/
 .card {
-  box-shadow: 4px 4px 8px 0 var(--primary-dark-color);
+  box-shadow: 4px 4px 10px 0 var(--primary-light-color);
+  min-height: 100%;
 }
+
+.card-row {
+  height: 100%;
+}
+
+.card .btn{
+  font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+  left: 50%; 
+  transform: translateX(-50%); 
+  border-radius: 0;
+  background-color: var(--primary-light-color);
+  color: var(--primary-dark-color);
+  border-color: transparent;
+}
+
 .card-title, .card-footer {
+  margin-top: 1rem; 
   font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
   font-size: 1rem;
   text-align: center;

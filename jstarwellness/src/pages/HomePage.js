@@ -27,24 +27,10 @@ const HomePage = () => {
                     tag='a'
                     target='_blank'
                     href='https://jstar-wellness.square.site/s/shop'
-                    style={{
-                        backgroundColor: '#80428b',
-                        borderColor: '#80428b',
-                        color: 'white',
-                        margin: '10px'
-                    }}
                 >
                     Book a Service
                 </Button>
-                <Link
-                    to='/about'
-                    className='btn btn-outline'
-                    style={{
-                        color: '#80428b',
-                        borderColor: '#80428b',
-                        margin: '10px'
-                    }}
-                >
+                <Link to='/about' className='btn btn-outline'>
                     Learn More
                 </Link>
             </Container>
