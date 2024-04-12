@@ -49,7 +49,7 @@ p {
   font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
 }
 
-h2 {
+h2, h5, * h2, * h5 {
   font-family: 'PoppinsLight','Open Sans', sans-serif;
 }
 

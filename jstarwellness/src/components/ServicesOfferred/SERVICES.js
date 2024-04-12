@@ -7,7 +7,7 @@ const SERVICES = [
         lowPrice: 40,
         highPrice: null,
         serviceType: 'PA',
-        src: '/logo.webp'
+        src: '/colorMatch.jpg'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const SERVICES = [
         lowPrice: 125,
         highPrice: 500,
         serviceType: 'PA',
-        src: '/logo.webp'
+        src: '/acneScar.png'
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ const SERVICES = [
         lowPrice: '240 per month (minimum 2 months)',
         highPrice: null,
         serviceType: 'NT',
-        src: '/logo.webp'
+        src: '/weightLift.png'
     },
     {
         id: 5,

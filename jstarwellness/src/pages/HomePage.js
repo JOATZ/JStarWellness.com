@@ -89,7 +89,7 @@ const HomePage = () => {
             <ServiceTypeCards />
             <Container className='home-page-buttons'>
                 <Button onClick={() => navigate('/about#myApproach')}>
-                    Discover why our service and experience stand out!
+                    Discover why our services and experience stand out!
                 </Button>
             </Container>
         </>

@@ -27,7 +27,7 @@ import {
 import Logo from '../../app/assets/img/logo.webp'
 
 import './Header.css'
-
+/*MOVE TOGGLER! and set bg color*/
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
