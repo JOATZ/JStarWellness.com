@@ -72,42 +72,14 @@ const Profile = () => {
                     tailor our coaching to create a customized plan that aligns
                     with your aspirations. Whether you're looking to enhance
                     your physical performance, improve your overall health, or
-                    achieve a specific fitness goal, I'm here to guide you. In
-                    Paramedical Artistry my approach is centered on enhancing
+                    achieve a specific fitness goal, I'm here to guide you.
+                </p>
+                <p>
+                    In Paramedical Artistry my approach is centered on enhancing
                     your natural features while addressing specific concerns.
                     With a blend of artistic expertise and paramedical
                     precision, I strive to create a harmonious fusion of
                     aesthetics and personal expression.
-                </p>
-            </Row>
-            <Row style={{ textAlign: 'justify', marginTop: '50px' }}>
-                <h2 style={{ textAlign: 'center' }}>Core Health Services:</h2>
-                <p>
-                    Personalized Nutrition Coaching: I analyze your unique
-                    nutritional needs prior to creating the program for you. I
-                    can also use HTMA to create a deeper, customized nutrition
-                    plan that supports your body's balance and well-being. We
-                    utilize cutting edge techniques to assess mineral imbalances
-                    in your body, offering insights to potential health
-                    improvements. Comprehensive Training Programs: My exercise
-                    and training coaching are designed to meet you at your
-                    current fitness level, gradually guiding you towards your
-                    goals with personalized and effective routines.
-                </p>
-            </Row>
-            <Row style={{ textAlign: 'justify', marginTop: '50px' }}>
-                <h2 style={{ textAlign: 'center' }}>Paramedical Artistry:</h2>
-                <p>
-                    Additionally, as a skilled paramedical artist I specialize
-                    in stretch mark & scar rejuvenation camouflage, aiming to
-                    restore and enhance your natural beauty. Personalized
-                    Consultations: I believe in open and personalized
-                    consultations to understand your specific needs, ensuring
-                    that my services align seamlessly with your expectations.
-                    Compassionate Care: Beyond the technical aspects of my work,
-                    I prioritize creating a caring and supportive environment,
-                    fostering a sense of confidence and empowerment in every
-                    client.
                 </p>
             </Row>
             <Row style={{ textAlign: 'justify', marginTop: '50px' }}>
@@ -126,9 +98,6 @@ const Profile = () => {
                     achieving holistic health, wellness, renewal and self
                     expression.
                 </p>
-                <h3 style={{ textAlign: 'center' }}>
-                    Rediscover Your Confidence!
-                </h3>
             </Row>
             <Row
                 style={{
@@ -138,7 +107,7 @@ const Profile = () => {
                 }}
             >
                 <Col className='about-page-col'>
-                    <h1>A Two-Decade Legacy</h1>
+                    <h2>A Two-Decade Legacy</h2>
                     <p>
                         Are you seeking a wellness partner who brings two
                         decades of expertise, a commitment to continuous
@@ -176,9 +145,9 @@ const Profile = () => {
                     />
                 </Col>
                 <Col className='about-page-col'>
-                    <h1 style={{ textAlign: 'center' }}>
+                    <h2 style={{ textAlign: 'center' }}>
                         Education and Flexibility:
-                    </h1>
+                    </h2>
                     <p>
                         Experience a wealth of education and flexibility in your
                         wellness journey. Jennifer believes in the "why" behind
@@ -196,9 +165,9 @@ const Profile = () => {
                 }}
             >
                 <Col className='about-page-col'>
-                    <h1 style={{ textAlign: 'center' }}>
+                    <h2 style={{ textAlign: 'center' }}>
                         Nutrition & Exercise Expertise:
-                    </h1>
+                    </h2>
                     <p>
                         Jennifer offers online nutrition plans tailored to the
                         season you're in and the one you're heading towards. Her
@@ -223,9 +192,9 @@ const Profile = () => {
                         marginTop: '50px'
                     }}
                 >
-                    <h1 style={{ textAlign: 'center' }}>
+                    <h2 style={{ textAlign: 'center' }}>
                         Personalized Plans, Not Cookie-Cutter Solutions:
-                    </h1>
+                    </h2>
                     <p>
                         Recognizing that one size does not fit all, Jennifer is
                         dedicated to crafting personalized nutrition and
