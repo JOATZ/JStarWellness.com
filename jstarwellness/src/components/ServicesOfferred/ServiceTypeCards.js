@@ -10,7 +10,9 @@ import {
     Row
 } from 'reactstrap'
 
-import CardPic from '../app/assets/img/370x370.jpg'
+import CardPic from '../../app/assets/img/370x370.jpg'
+
+import './ServiceTypeCards.css'
 
 const ServiceTypeCards = () => {
     return (

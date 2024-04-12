@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 
-import ServiceItem from '../components/servicesList/ServiceItem.js'
-import SERVICES from '../components/servicesList/SERVICES.js'
+import ServiceItem from '../components/ServicesOfferred/ServiceItem.js'
+import SERVICES from '../components/ServicesOfferred/SERVICES.js'
 
 const ServicePage = () => {
     return (

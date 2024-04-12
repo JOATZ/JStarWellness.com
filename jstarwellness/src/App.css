@@ -29,10 +29,14 @@
   font-display: swap;
 }
 
-
-.App-link {
-  color: var(--primay-dark-color);
+@font-face {
+  font-family: 'PoppinsExtraLightItalic';
+  src: local('Poppins'), url('../public/fonts/Poppins-ExtraLightItalic.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 /*------For Sticky Footer--------*/
 html, body, #root {
   height: 100%;
@@ -50,75 +54,13 @@ html, body, #root {
   flex: 1;
 }
 
-.site-footer a{
-  margin: 1px;
-}
 
-.footer-icons {
-  color: var(--primary-dark-color);
-  font-size: 2em;
-}
 /*------Global Fonts--------*/
 body {
   font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
 }
-/*-----HEADER-----*/
-.header-div {
-  background-color: var(--primary-light-color);
-}
-
-.top-panel-row {
-  background-color: var(--primary-light-color);
-}
-
-.top-panel a {
-  display: inline;
-  color: var(--primary-dark-color);
-  text-decoration: none;
-}
-
-.navbar, .navbar a, .navbar * {
-  color: var(--primary-dark-color); 
-}
-
-.navbar svg {
-  margin-right: 3px;
-  
-}
-
-.navbar-toggler, .navbar-toggler-icon {
-  border-color: var(--primary-dark-color) !important;
-}
-
-.navbar-brand img {
-  max-width: 4rem;
-}
-
-.navbar-brand h1 {
-  font-family: 'EuphoriaScript','Open Sans', sans-serif;
-  font-size: 4rem;
-  margin-left: 50px;
-}
 
 
-
-@media (max-width: 768px) {
-  .responsive-icon {
-      font-size: 0.75em; 
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar-brand h1 {
-    font-size: 48px;
-  }
-}
-
-.navbar-dark {
-  background-color:var(--primary-light-color);
-  margin-bottom: 2rem;
-  min-height: 8rem;
-}
 /*------Home Page Intro-------*/
 .home-page-header {
   font-family: 'EuphoriaScript','Open Sans', sans-serif;

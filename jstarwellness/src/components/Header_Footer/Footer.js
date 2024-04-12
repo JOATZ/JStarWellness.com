@@ -9,6 +9,8 @@ import { IoLogoVenmo } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
+import './Footer.css'
+
 const Footer = () => {
     return (
         <footer className='site-footer'>

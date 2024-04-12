@@ -1,0 +1,9 @@
+.site-footer a{
+    margin: 1px;
+    color: var(--primary-dark-color);
+  }
+  
+  .footer-icons {
+    color: var(--primary-dark-color);
+    font-size: 2em;
+  }

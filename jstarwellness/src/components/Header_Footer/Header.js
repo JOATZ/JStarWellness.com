@@ -24,7 +24,9 @@ import {
     Row
 } from 'reactstrap'
 
-import Logo from '../app/assets/img/logo.webp'
+import Logo from '../../app/assets/img/logo.webp'
+
+import './Header.css'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)

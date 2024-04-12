@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Button, Container } from 'reactstrap'
 
 import HomeCarousel from '../components/HomeCarousel'
-import ServiceTypeCards from '../components/ServiceTypeCards'
+import ServiceTypeCards from '../components/ServicesOfferred/ServiceTypeCards.js'
 
 const HomePage = () => {
     return (

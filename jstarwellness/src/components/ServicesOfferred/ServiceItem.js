@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card, Col, Row } from 'reactstrap'
 
+import './Service.css'
+
 const ServiceItem = ({ name, description, lowPrice, highPrice, src }) => (
     <Card className='service-item mb-2 mt-2'>
         <Row noGutters>

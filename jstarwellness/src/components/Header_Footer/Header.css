@@ -1,0 +1,72 @@
+/*-----HEADER-----*/
+.top-panel-row {
+background-color: var(--primary-light-color);
+}
+  
+.top-panel {
+display: inline;
+color: var(--primary-dark-color);
+text-decoration: none;
+}
+
+.top-panel a {
+    display: inline;
+    color: var(--primary-dark-color);
+    text-decoration: none;
+  }
+
+.navbar {
+color: var(--primary-dark-color);
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+border-color: var(--primary-dark-color) !important;
+}
+
+.navbar-brand img {
+max-width: 4rem;
+}
+
+.navbar, .navbar a, .navbar * {
+  color: var(--primary-dark-color); 
+}
+
+.navbar svg {
+  margin-right: 3px;
+}
+
+.navbar-brand h1 {
+font-family: 'EuphoriaScript','Open Sans', sans-serif;
+font-size: 4rem;
+margin-left: 50px;
+}
+
+.navbar-dark {
+    background-color:var(--primary-light-color);
+    margin-bottom: 2rem;
+    min-height: 8rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--primary-dark-color); 
+  padding-bottom: 5px;
+  color: var(--primary-dark-color) !important;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+    .responsive-icon {
+        font-size: 0.75em; 
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .navbar-brand h1 {
+      font-size: 48px;
+    }
+  }
