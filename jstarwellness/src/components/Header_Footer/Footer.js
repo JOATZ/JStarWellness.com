@@ -1,8 +1,10 @@
 import { IconContext } from 'react-icons'
 import {
     FaCcPaypal,
+    FaEnvelope,
     FaFacebookSquare,
     FaInstagramSquare,
+    FaPhoneAlt,
     FaTwitterSquare
 } from 'react-icons/fa'
 import { IoLogoVenmo } from 'react-icons/io5'
@@ -76,21 +78,22 @@ const Footer = () => {
                             className='btn btn-link'
                             href='tel:+18052687565'
                         >
-                            <i className='fa fa-phone' /> 1-805-268-7565
+                            <FaPhoneAlt /> 1-805-268-7565
                         </a>
-                        <br />
-                        <p>
-                            Online Nutrition & Training can be done for any
-                            client worldwide.
-                        </p>
                         <a
                             role='button'
                             className='btn btn-link'
                             href='mailto:Stepup2shapeup@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' />
+                            <FaEnvelope />
                             Stepup2shapeup@gmail.com
                         </a>
+                        <br />
+                        <p>
+                            Online Nutrition & Training can be done for any
+                            client worldwide. Paramedical Artistry services
+                            located on 125 Union Avenue, Orcutt, CA
+                        </p>
                     </Col>
                 </Row>
             </Container>

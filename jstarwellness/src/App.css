@@ -53,6 +53,8 @@ h2 {
   font-family: 'PoppinsLight','Open Sans', sans-serif;
 }
 
+
+
 /*------For Sticky Footer--------*/
 html, body, #root {
   height: 100%;
@@ -230,6 +232,12 @@ body {
   .home-page-intro {
     width: 90%;
   }
+}
+
+.about-page-container img {
+  box-shadow: 4px 4px 4px 0 var(--primary-light-color);
+  margin: 4px;
+  border-radius: 3px;
 }
 /* Before and After Cards in Gallery-------------------------------------------------------------- */
 

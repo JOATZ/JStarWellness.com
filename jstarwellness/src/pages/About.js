@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
 import ProfilePic from '../app/assets/img/JennProfilePic.webp'
@@ -9,9 +11,22 @@ import JennComp1 from '../app/assets/img/nt/JennComp1.webp'
 import JennComp2 from '../app/assets/img/nt/JennComp2.webp'
 import Client3 from '../app/assets/img/nt/pic9.webp'
 
-const Profile = () => {
+const About = () => {
+    const location = useLocation()
+
+    useEffect(() => {
+        const hash = location.hash
+        if (hash) {
+            const id = hash.replace('#', '')
+            const element = document.getElementById(id)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' })
+            }
+        }
+    }, [location])
+
     return (
-        <Container>
+        <Container id='top' className='about-page-container'>
             <Row
                 style={{
                     maxHeight: '100vh',
@@ -63,8 +78,69 @@ const Profile = () => {
                     the unique needs and aspirations of each client.
                 </p>
             </Row>
+            <Row>
+                <h2 style={{ textAlign: 'center' }}>About Me</h2>
+                <p>
+                    <h4>Early Spark</h4>
+                    Hi & welcome to my transformative journey. I'm a passionate
+                    individual whose odyssey in the Health & Wellness industry
+                    began in the heart of New Jersey in 2004. At the tender age
+                    of 16, my interest was sparked by my father's subscription
+                    to Men's Health Magazine. Together, we embraced a fitness
+                    routine, turning our garage into a makeshift gym. These
+                    shared workouts became a weekly highlight, forging a
+                    connection between health, family, and the joy of physical
+                    activity.
+                    <h4>Health Challenges</h4>
+                    Amidst this exploration, I faced a personal health
+                    challenge—a candida infection. Conventional solutions proved
+                    temporary, prompting me to delve deeper. A chance encounter
+                    with the "Acid & Alkaline Diet" not only cured my candida
+                    but ignited a fervor for understanding holistic health.
+                    <h4>Early Career Steps</h4>
+                    My journey led me to work in various gyms while obtaining my
+                    personal training certification at 18. Simultaneously, I
+                    joined the Air Force National Guard, adding a unique
+                    dimension to my career path.
+                    <h4>Diverse Certifications</h4> Driven by a thirst for
+                    knowledge, I pursued certifications ranging from Kids Sports
+                    Nutrition Mentor to Zumba Instructor and Group Fitness
+                    Instructor. I added cycling instruction to my repertoire in
+                    2009, showcasing my commitment to a multifaceted approach to
+                    wellness. Educational Pursuits: Completing the Dietetic
+                    Technician Registered Nutrition Program at Middlesex County
+                    College and relocating to California marked pivotal moments
+                    in my academic and professional journey. Immersed in the
+                    health supplement industry, I continued to accumulate
+                    knowledge and certifications.
+                    <h4>Jill of Many Trades</h4>
+                    say I'm a "Jill of many" in the industry. My expertise spans
+                    hormones, various exercise training modalities, gut health,
+                    athletes' nutrition, and stages of pregnancy. Recognizing
+                    the interconnectedness of mind, body, and spirit, I approach
+                    health holistically. <h4>Innovative Services</h4>In 2023, I
+                    responded to high demand by adding two innovative services
+                    to my nutrition and training packages. I became a certified
+                    Hair Tissue Mineral Analysis Practitioner, collaborating
+                    with a lab to gain insights into clients' body states.
+                    Additionally, I embraced the role of a Paramedical Artist,
+                    using my skills to naturally camouflage stretch marks and
+                    scars.
+                </p>
+                <p>
+                    My philosophy revolves around the holistic well-being of
+                    individuals. Beauty, health, and wellness intertwine in my
+                    practice, reflecting a commitment to empowering others on
+                    their unique paths to optimal health and self-discovery. I
+                    continue to evolve, learn, and contribute to the well-being
+                    of those I serve, embodying the essence of a dedicated
+                    professional in the dynamic realm of Beauty & Wellness.
+                </p>
+            </Row>
             <Row style={{ textAlign: 'justify', marginTop: '50px' }}>
-                <h2 style={{ textAlign: 'center' }}>My Approach:</h2>
+                <h2 style={{ textAlign: 'center' }} id='myApproach'>
+                    My Approach:
+                </h2>
                 <p>
                     I believe in meeting you exactly where you are, recognizing
                     that every person is in a different season of life. By
@@ -240,4 +316,4 @@ const Profile = () => {
     )
 }
 
-export default Profile
+export default About

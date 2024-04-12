@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Button, Container, Row } from 'reactstrap'
 
 import HomeCarousel from '../components/HomeCarousel'
 import ServiceTypeCards from '../components/ServicesOfferred/ServiceTypeCards.js'
 
 const HomePage = () => {
+    const navigate = useNavigate()
+
     return (
         <>
             <HomeCarousel />
@@ -30,26 +32,40 @@ const HomePage = () => {
                 >
                     Book a Service
                 </Button>
-                <Link to='/about' className='btn btn-outline'>
+                <Button onClick={() => navigate('/about#top')}>
                     Learn More
-                </Link>
+                </Button>
             </Container>
+            <p className='home-page-intro'>
+                Jennifer's Wellness Services is your gateway to a wellness
+                journey that celebrates your uniqueness. Embrace education,
+                flexibility, and results crafted just for you. Your confidence,
+                inside and out, begins here.
+            </p>
             <Container className='home-page-content'>
                 <h1>Core Health Services</h1>
                 <Row>
                     <h2>Personalized Nutrition Coaching:</h2>
                     <p>
                         I analyze your unique nutritional needs prior to
-                        creating the program for you. I can also use HTMA to
-                        create a deeper, customized nutrition plan that supports
-                        your body's balance and well-being. We utilize cutting
-                        edge techniques to assess mineral imbalances in your
-                        body, offering insights to potential health
-                        improvements. Comprehensive Training Programs: My
-                        exercise and training coaching are designed to meet you
-                        at your current fitness level, gradually guiding you
+                        creating the program for you. I can also use Hair Tissue
+                        Mineral Analysis Testing (HTMA) to create a deeper,
+                        customized nutrition plan that supports your body's
+                        balance and well-being. We utilize cutting edge
+                        techniques to assess mineral imbalances in your body,
+                        offering insights to potential health improvements.
+                    </p>
+                    <h2>Comprehensive Training Programs:</h2>
+                    <p>
+                        My exercise and training coaching is designed to meet
+                        you at your current fitness level, gradually guiding you
                         towards your goals with personalized and effective
-                        routines.
+                        routines. My training programs are meticulously crafted
+                        for both home and fitness facility environments, with a
+                        sharp focus on achieving your specific goals. They are
+                        tailored to foster adaptation, progression, and enhanced
+                        functional movement, all while uniquely aligning with
+                        your personal capabilities.
                     </p>
                 </Row>
                 <Row style={{ textAlign: 'justify', marginTop: '50px' }}>
@@ -72,9 +88,9 @@ const HomePage = () => {
             </Container>
             <ServiceTypeCards />
             <Container className='home-page-buttons'>
-                <Link to='/about' className='btn btn-outline'>
+                <Button onClick={() => navigate('/about#myApproach')}>
                     Discover why our service and experience stand out!
-                </Link>
+                </Button>
             </Container>
         </>
     )
