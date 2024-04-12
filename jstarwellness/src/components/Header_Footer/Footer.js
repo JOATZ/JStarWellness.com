@@ -92,7 +92,8 @@ const Footer = () => {
                         <p>
                             Online Nutrition & Training can be done for any
                             client worldwide. Paramedical Artistry services
-                            located on 125 Union Avenue, Orcutt, CA
+                            located on 125 Union Avenue, Orcutt, CA NOTES FOR
+                            LATER: afterpay, square, venmo, paypal, zelle
                         </p>
                     </Col>
                 </Row>

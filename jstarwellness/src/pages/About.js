@@ -19,6 +19,8 @@ const About = () => {
         if (hash) {
             const id = hash.replace('#', '')
             const element = document.getElementById(id)
+            const navbar = document.querySelector('.navbar')
+            const navbarHeight = navbar.offsetHeight
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' })
             }
