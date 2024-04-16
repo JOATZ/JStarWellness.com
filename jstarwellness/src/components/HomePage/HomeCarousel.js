@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react'
+import Pic from 'app/assets/img/1170x700.jpg'
 import {
     Carousel,
     CarouselCaption,
@@ -7,7 +8,7 @@ import {
     CarouselItem
 } from 'reactstrap'
 
-import Pic from '../app/assets/img/1170x700.jpg'
+import 'components/HomePage/HomeCarousel.css'
 
 const items = [
     {

@@ -1,0 +1,17 @@
+.site-footer a{
+    margin: 1px;
+    color: var(--primary-dark-color);
+  }
+  
+  .footer-icons {
+    color: var(--primary-dark-color);
+    font-size: 2em;
+  }
+
+  .site-footer {
+    font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+    font-style: normal;
+    padding: 20px 0;
+    margin-top: 2rem;
+    background-color: var(--primary-light-color);
+  }

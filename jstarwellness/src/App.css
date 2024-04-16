@@ -52,26 +52,6 @@ p {
 h2, h5, * h2, * h5 {
   font-family: 'PoppinsLight','Open Sans', sans-serif;
 }
-/*----reviews carousel----*/
-.review-card {
-    border: 1px solid black; 
-    margin: 0px 5px;
-  }
-
-  .review-content {
-      font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-  }
-  
-  .review-card .review-author {
-      text-align: end; 
-      background-color: #f8f9fa;
-      font-family: 'PoppinsExtraLightItalic','Open Sans', sans-serif;
-  }
-
-  .reviews-carousel-row {
-    justify-content: center;
-    padding: 10px;
-  }
 
 /*------For Sticky Footer--------*/
 html, body, #root {
@@ -93,57 +73,9 @@ html, body, #root {
 
 /*------Global Fonts--------*/
 body {
-  font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
-}
-
-
-/*------Home Page Intro-------*/
-.home-page-header {
-  font-family: 'EuphoriaScript','Open Sans', sans-serif;
-  font-size: min(7vw, 100px);
-  text-align: center;
-  margin: 2rem auto; 
-}
-/*---------Home Page Buttons---------*/
-.home-page-buttons {
   font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
 }
 
-.home-page-buttons .btn:nth-child(1) {
-  background-color: var(--primary-dark-color); 
-  color: white; 
-  border-color: var(--primary-dark-color); 
-  margin: 10px;
-  font-size: 1.5rem;
-}
-
-.home-page-buttons .btn:nth-child(2) {
-  background-color: var(--primary-Light-color); 
-  color: var(--primary-dark-color);
-  border-color: var(--primary-dark-color);
-  margin: 10px;
-  font-size: 1.5rem;
-}
-.home-page-intro {
-  font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-  font-size: min(4vw, 1.5rem);
-  text-align: justify;
-  margin: 2rem auto; 
-  width: 50%; 
-}
-
-.home-page-content h1, .home-page-content h2 {
-  text-align: center;
-}
-
-.home-page-content .row {
-  text-align: justify;
-  margin-top: 50px;
-}
 /*---------HOMEPAGE CARDS-----------*/
 .card {
   box-shadow: 4px 4px 10px 0 var(--primary-light-color);
@@ -179,30 +111,10 @@ body {
   margin: 1rem 0;
 }
 
-.service-item h5 {
-  font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
-  font-size: 1rem;
-  margin: 1rem 0;
-}
-
-.service-item p {
-  font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-  text-align: justify;
-  margin: 1rem 2rem 1rem 0;
-}
-
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
-}
-
-.site-footer {
-  font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-  font-style: normal;
-  padding: 20px 0;
-  margin-top: 2rem;
-  background-color: var(--primary-light-color);
 }
 
 .page-enter {
@@ -225,14 +137,6 @@ body {
   transition: 300ms ease-in;
 }
 
-/* ----------Home Page Carousel-------------------- */
-.carousel-item img{
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-}
-
 /*--------------AboutPage--------------------------*/
 .about-page-col {
   display: flex;
@@ -246,33 +150,10 @@ body {
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .home-page-intro {
-    width: 90%;
-  }
-}
+
 
 .about-page-container img {
   box-shadow: 4px 4px 4px 0 var(--primary-light-color);
   margin: 4px;
   border-radius: 3px;
-}
-/* Before and After Cards in Gallery-------------------------------------------------------------- */
-
-.before-after-card {
-  margin: 10px;
-  height: 100%;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.before-after-card img{
-  border-radius: 10px;
-  padding: 5px;
-  height: 100%;
-  width: 100%;
-  object-fit: contain; 
-  aspect-ratio: 1 / 1; 
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Logo from 'app/assets/img/logo.webp'
 import {
     FaAddressCard,
     FaCamera,
@@ -24,9 +25,7 @@ import {
     Row
 } from 'reactstrap'
 
-import Logo from '../../app/assets/img/logo.webp'
-
-import './Header.css'
+import 'components/Header/Header.css'
 /*MOVE TOGGLER! and set bg color*/
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)

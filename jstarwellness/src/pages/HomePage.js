@@ -1,9 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom'
+import HomeCarousel from 'components/HomePage/HomeCarousel.js'
+import ReviewsCarousel from 'components/HomePage/ReviewsCarousel.js'
+import ServiceTypeCards from 'components/ServicesOfferred/ServiceTypeCards.js'
+import { useNavigate } from 'react-router-dom'
 import { Button, Container, Row } from 'reactstrap'
 
-import HomeCarousel from '../components/HomeCarousel.js'
-import ReviewsCarousel from '../components/ReviewsCarousel.js'
-import ServiceTypeCards from '../components/ServicesOfferred/ServiceTypeCards.js'
+import 'pages/HomePage.css'
 
 const HomePage = () => {
     const navigate = useNavigate()

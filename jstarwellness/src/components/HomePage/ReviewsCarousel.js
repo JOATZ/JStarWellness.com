@@ -9,6 +9,8 @@ import {
     Row
 } from 'reactstrap'
 
+import 'components/HomePage/ReviewsCarousel.css'
+
 const items = [
     {
         review: 'Found a healthy balance of foods and nutrients.',

@@ -1,16 +1,15 @@
 import React from 'react'
+import ServiceItem from 'components/ServicesOfferred/ServiceItem.js'
+import SERVICES from 'components/ServicesOfferred/SERVICES.js'
 import { Col, Container, Row } from 'reactstrap'
 
-import ServiceItem from '../components/ServicesOfferred/ServiceItem.js'
-import SERVICES from '../components/ServicesOfferred/SERVICES.js'
+import 'pages/ServicePage.css'
 
 const ServicePage = () => {
     return (
         <Container>
             <Row>
                 <div>
-                    <h1>Hair Tissue Mineral Analysis Testing:</h1>
-                    <p></p>
                     <h1>Paramedical Artistry Tattooing:</h1>
                     <p>
                         Explore the world of non-invasive Paramedical Artistry
@@ -25,7 +24,11 @@ const ServicePage = () => {
             </Row>
             <Row className='justify-content-center'>
                 {SERVICES.map((service) => (
-                    <Col md='10' key={service.id}>
+                    <Col
+                        md='10'
+                        key={service.id}
+                        className='service-item-card-col'
+                    >
                         <ServiceItem {...service} />
                     </Col>
                 ))}

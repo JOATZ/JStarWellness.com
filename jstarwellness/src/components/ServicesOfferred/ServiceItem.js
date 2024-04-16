@@ -1,31 +1,17 @@
 import React from 'react'
 import { Card, Col, Row } from 'reactstrap'
 
-import './Service.css'
-
 const ServiceItem = ({ name, description, lowPrice, highPrice, src }) => (
-    <Card className='service-item mb-2 mt-2'>
+    <Card className='service-item-card'>
         <Row noGutters>
-            <Col
-                md='4'
-                className='d-flex justify-content-center align-items-center'
-            >
-                <img
-                    src={src}
-                    alt={`Service: ${name}`}
-                    style={{
-                        width: '200px',
-                        height: '200px',
-                        objectFit: 'cover'
-                    }}
-                    className='img-fluid'
-                />
+            <Col md='4' className='service-item-col'>
+                <img src={src} alt={`Service: ${name}`} className='img-fluid' />
             </Col>
             <Col md='8'>
                 <div className='p-3'>
-                    <h5 style={{ fontWeight: 'bold' }}>{name}</h5>
+                    <h5>{name}</h5>
                     <p>{description}</p>
-                    <p className='text-muted'>
+                    <p>
                         Price: ${lowPrice}
                         {highPrice ? ` - ${highPrice}` : ''}
                     </p>

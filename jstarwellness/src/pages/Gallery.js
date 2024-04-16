@@ -1,10 +1,8 @@
 import React from 'react'
+import ParamedicalImage from 'app/assets/img/370x370.jpg'
+import NutritionImage from 'app/assets/img/370x370.jpg'
 import { Link } from 'react-router-dom'
 import { Card, CardBody, CardImg, CardTitle, Col, Row } from 'reactstrap'
-
-import ParamedicalImage from '../app/assets/img/370x370.jpg'
-import NutritionImage from '../app/assets/img/370x370.jpg'
-import SubHeader from '../components/SubHeader.js'
 
 const Gallery = () => {
     return (

@@ -1,11 +1,11 @@
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 import { Col, Container, Row } from 'reactstrap'
 
-import SubHeader from '../components/SubHeader'
+import 'pages/ContactPage.css'
 
 const ContactPage = () => {
     return (
-        <Container>
-            <SubHeader current='Contact Us' />
+        <Container className='contact-page-container'>
             <Row className='row-content align-items-center'>
                 <Col sm='4'>
                     <h5>Our Address</h5>
@@ -25,7 +25,7 @@ const ContactPage = () => {
                         className='btn btn-link'
                         href='rel:+18052687565'
                     >
-                        <i className='fa fa-phone' />
+                        <FaPhoneAlt />
                         1-805-268-7565
                     </a>
                     <br />
@@ -34,7 +34,7 @@ const ContactPage = () => {
                         className='btn btn-link'
                         href='mailto:Stepup2shapeup@gmail.com'
                     >
-                        <i className='fa fa-envelope-o' />
+                        <FaEnvelope />
                         Stepup2shapeup@gmail.com
                     </a>
                 </Col>

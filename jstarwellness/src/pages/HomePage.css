@@ -1,0 +1,59 @@
+/*------Home Page Intro-------*/
+.home-page-header {
+    font-family: 'EuphoriaScript','Open Sans', sans-serif;
+    font-size: min(7vw, 8rem);
+    text-align: center;
+    margin: 2rem auto; 
+}
+
+.home-page-intro {
+    font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+    font-size: min(4vw, 1.5rem);
+    text-align: justify;
+    margin: 2rem auto; 
+    width: 50%; 
+}
+
+@media (max-width: 768px) {
+    .home-page-intro {
+      width: 90%;
+    }
+  }
+
+.home-page-content h1, .home-page-content h2 {
+    text-align: center;
+}
+
+.home-page-content h1 {
+    font-family: 'EuphoriaScript','Open Sans', sans-serif;
+    font-size: min(7vw, 8rem);
+}
+
+.home-page-content .row {
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.home-page-buttons {
+    font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.home-page-buttons .btn:nth-child(1) {
+    background-color: var(--primary-dark-color); 
+    color: white; 
+    border-color: var(--primary-dark-color); 
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.home-page-buttons .btn:nth-child(2) {
+    background-color: var(--primary-Light-color); 
+    color: var(--primary-dark-color);
+    border-color: var(--primary-dark-color);
+    margin: 10px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,10 @@
+.contact-page-container a {
+    display: inline;
+    color: var(--primary-dark-color);
+    text-decoration: none;
+}
+
+.contact-page-container a svg {
+    margin-right: .5rem;
+}
+
