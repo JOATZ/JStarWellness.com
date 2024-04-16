@@ -52,8 +52,26 @@ p {
 h2, h5, * h2, * h5 {
   font-family: 'PoppinsLight','Open Sans', sans-serif;
 }
+/*----reviews carousel----*/
+.review-card {
+    border: 1px solid black; 
+    margin: 0px 5px;
+  }
 
+  .review-content {
+      font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+  }
+  
+  .review-card .review-author {
+      text-align: end; 
+      background-color: #f8f9fa;
+      font-family: 'PoppinsExtraLightItalic','Open Sans', sans-serif;
+  }
 
+  .reviews-carousel-row {
+    justify-content: center;
+    padding: 10px;
+  }
 
 /*------For Sticky Footer--------*/
 html, body, #root {
