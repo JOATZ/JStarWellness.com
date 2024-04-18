@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Logo from 'app/assets/img/logo.webp'
+import { ReactComponent as Logo } from 'app/assets/JStarLogo.svg'
 import {
     FaAddressCard,
     FaCamera,
@@ -80,12 +80,7 @@ const Header = () => {
                 </Row>
                 <div className='d-flex justify-content-between align-items-center w-100'>
                     <NavbarBrand href='/' className='d-flex pt-3'>
-                        <img
-                            src={Logo}
-                            alt='JStar Logo'
-                            className='float-start'
-                        />
-                        <h1 className='mt-1'>JStar Wellness</h1>
+                        <Logo />
                     </NavbarBrand>
 
                     <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
