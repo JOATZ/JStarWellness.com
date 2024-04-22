@@ -2,7 +2,7 @@ import ProfilePic from 'app/assets/img/JennProfilePic.webp'
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 import { FaCcPaypal } from 'react-icons/fa'
 import { IoLogoVenmo } from 'react-icons/io5'
-import { SiAfterpay, SiSquare, SiZelle } from 'react-icons/si'
+import { SiAfterpay, SiPaypal, SiSquare, SiZelle } from 'react-icons/si'
 import { Col, Container, Row } from 'reactstrap'
 
 import 'pages/ContactPage.css'
@@ -54,7 +54,7 @@ const ContactPage = () => {
             <h2>Payments</h2>
             <div className='payments'>
                 <a target='blank' href='http://paypal.com/Star3655@yahoo.com '>
-                    <FaCcPaypal />
+                    <SiPaypal />
                 </a>
                 <a target='blank' href='http://venmo.com/Sudavida1988'>
                     <IoLogoVenmo />
@@ -72,7 +72,7 @@ const ContactPage = () => {
                     <SiAfterpay />
                 </a>
             </div>
-            -still need afterpay and Zelle info to connevt links
+            -still need afterpay and Zelle info to connect links
         </Container>
     )
 }
