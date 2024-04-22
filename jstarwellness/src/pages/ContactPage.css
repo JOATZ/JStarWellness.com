@@ -1,3 +1,9 @@
+.contact-page-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .contact-page-container a {
     display: inline;
     color: var(--primary-dark-color);
@@ -7,4 +13,24 @@
 .contact-page-container a svg {
     margin-right: .5rem;
 }
+
+.contact-page-container h2 {
+    text-align: center;
+}
+.payments {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+   
+}
+
+.payments a svg {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 

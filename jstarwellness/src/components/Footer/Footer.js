@@ -16,7 +16,7 @@ const Footer = () => {
         <footer className='site-footer'>
             <Container fluid className='footer-container'>
                 <Row className='footer-row'>
-                    <Col xs='6' md='5'>
+                    <Col xs='4' md='5'>
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -34,10 +34,13 @@ const Footer = () => {
                             <li>
                                 <Link to='/contact'>Contact</Link>
                             </li>
+                            <li>
+                                <Link to='/testimonials'>Testimonials</Link>
+                            </li>
                         </ul>
                     </Col>
                     <Col
-                        xs='6'
+                        xs='8'
                         md='2'
                         className='text-center align-self-center'
                     >

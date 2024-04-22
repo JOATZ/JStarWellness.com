@@ -15,7 +15,7 @@ import {
     FaPhoneAlt,
     FaTwitterSquare
 } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import {
     Col,
     Collapse,
@@ -83,13 +83,15 @@ const Header = () => {
                 </Row>
             </Container>
             <Navbar dark sticky='top' expand='lg'>
-                <NavbarBrand href='/' className='ms-5'>
-                    <img
-                        src={LogoImg}
-                        className='float-start'
-                        alt='JStar Logo'
-                    />
-                    <h1 className='mt-1'>JStar Wellness</h1>
+                <NavbarBrand className='ms-5'>
+                    <Link to='/'>
+                        <img
+                            src={LogoImg}
+                            className='float-start'
+                            alt='JStar Logo'
+                        />
+                        <h1 className='mt-1'>JStar Wellness</h1>
+                    </Link>
                 </NavbarBrand>
 
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />

@@ -3,6 +3,10 @@
   color: var(--primary-dark-color);
 }
 
+.site-footer a svg {
+  margin-right: .5rem;
+}
+
 .footer-icons {
   color: var(--primary-dark-color);
   font-size: 3rem;

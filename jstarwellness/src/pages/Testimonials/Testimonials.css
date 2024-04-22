@@ -1,3 +1,8 @@
+.testimonial-intro {
+    padding: 40px 10px 10px;
+    text-align: center;
+}
+
 .testimonial-row, .testimonial-col {
     padding-top: 5px;
 }

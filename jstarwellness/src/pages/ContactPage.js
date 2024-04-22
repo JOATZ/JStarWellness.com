@@ -1,6 +1,8 @@
+import ProfilePic from 'app/assets/img/JennProfilePic.webp'
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 import { FaCcPaypal } from 'react-icons/fa'
 import { IoLogoVenmo } from 'react-icons/io5'
+import { SiSquare, SiZelle } from 'react-icons/si'
 import { Col, Container, Row } from 'reactstrap'
 
 import 'pages/ContactPage.css'
@@ -9,6 +11,13 @@ const ContactPage = () => {
     return (
         <Container className='contact-page-container'>
             <Row className='row-content align-items-center'>
+                <Col sm='3'>
+                    <img
+                        src={ProfilePic}
+                        alt='Jenn'
+                        className='contact-page-pic'
+                    />
+                </Col>
                 <Col sm='4'>
                     <h5>Our Address</h5>
                     <address>
@@ -21,7 +30,7 @@ const ContactPage = () => {
                         U.S.A.
                     </address>
                 </Col>
-                <Col>
+                <Col sm='4'>
                     <a
                         role='button'
                         className='btn btn-link'
@@ -40,13 +49,23 @@ const ContactPage = () => {
                         Stepup2shapeup@gmail.com
                     </a>
                 </Col>
+            </Row>
+            <br />
+            <h2>Payments</h2>
+            <div className='payments'>
                 <a target='blank' href='http://paypal.com/Star3655@yahoo.com '>
                     <FaCcPaypal />
                 </a>
                 <a target='blank' href='http://venmo.com/Sudavida1988'>
                     <IoLogoVenmo />
                 </a>
-            </Row>
+                <a target='blank' href='http://venmo.com/Sudavida1988'>
+                    <SiZelle />
+                </a>
+                <a target='blank' href='http://venmo.com/Sudavida1988'>
+                    <SiSquare />
+                </a>
+            </div>
         </Container>
     )
 }
