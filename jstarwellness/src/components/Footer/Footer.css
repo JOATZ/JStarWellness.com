@@ -1,17 +1,24 @@
 .site-footer a{
-    margin: 1px;
-    color: var(--primary-dark-color);
-  }
-  
-  .footer-icons {
-    color: var(--primary-dark-color);
-    font-size: 2em;
-  }
+  margin: 1px;
+  color: var(--primary-dark-color);
+}
 
-  .site-footer {
-    font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-    font-style: normal;
-    padding: 20px 0;
-    margin-top: 2rem;
-    background-color: var(--primary-light-color);
+.footer-icons {
+  color: var(--primary-dark-color);
+  font-size: 3rem;
+}
+
+.site-footer {
+  font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
+  font-style: normal;
+  padding: 20px 0;
+  margin-top: 2rem;
+  background-color: var(--primary-light-color);
+}
+  
+@media (min-width: 1600px) {
+  .footer-container {
+      max-width: 1600px;
   }
+}
+

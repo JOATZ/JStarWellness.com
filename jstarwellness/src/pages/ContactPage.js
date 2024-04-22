@@ -1,4 +1,6 @@
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
+import { FaCcPaypal } from 'react-icons/fa'
+import { IoLogoVenmo } from 'react-icons/io5'
 import { Col, Container, Row } from 'reactstrap'
 
 import 'pages/ContactPage.css'
@@ -38,6 +40,12 @@ const ContactPage = () => {
                         Stepup2shapeup@gmail.com
                     </a>
                 </Col>
+                <a target='blank' href='http://paypal.com/Star3655@yahoo.com '>
+                    <FaCcPaypal />
+                </a>
+                <a target='blank' href='http://venmo.com/Sudavida1988'>
+                    <IoLogoVenmo />
+                </a>
             </Row>
         </Container>
     )

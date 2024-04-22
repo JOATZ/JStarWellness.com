@@ -1,13 +1,11 @@
 import { IconContext } from 'react-icons'
 import {
-    FaCcPaypal,
     FaEnvelope,
     FaFacebookSquare,
     FaInstagramSquare,
     FaPhoneAlt,
     FaTwitterSquare
 } from 'react-icons/fa'
-import { IoLogoVenmo } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
@@ -16,9 +14,9 @@ import 'components/Footer/Footer.css'
 const Footer = () => {
     return (
         <footer className='site-footer'>
-            <Container>
-                <Row>
-                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+            <Container fluid className='footer-container'>
+                <Row className='footer-row'>
+                    <Col xs='6' md='5'>
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -38,7 +36,11 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col xs='6' sm='3' className='text-center'>
+                    <Col
+                        xs='6'
+                        md='2'
+                        className='text-center align-self-center'
+                    >
                         <IconContext.Provider
                             value={{
                                 className: 'footer-icons'
@@ -57,22 +59,9 @@ const Footer = () => {
                             <a target='blank' href='http://twitter.com/'>
                                 <FaTwitterSquare />
                             </a>
-                            <h5>Payments</h5>
-                            <a
-                                target='blank'
-                                href='http://paypal.com/Star3655@yahoo.com '
-                            >
-                                <FaCcPaypal />
-                            </a>
-                            <a
-                                target='blank'
-                                href='http://venmo.com/Sudavida1988'
-                            >
-                                <IoLogoVenmo />
-                            </a>
                         </IconContext.Provider>
                     </Col>
-                    <Col sm='4' className='text-center'>
+                    <Col sm='4' md='5' className='text-end d-none d-md-block'>
                         <a
                             role='button'
                             className='btn btn-link'
@@ -80,6 +69,7 @@ const Footer = () => {
                         >
                             <FaPhoneAlt /> 1-805-268-7565
                         </a>
+                        <br />
                         <a
                             role='button'
                             className='btn btn-link'
@@ -91,9 +81,9 @@ const Footer = () => {
                         <br />
                         <p>
                             Online Nutrition & Training can be done for any
-                            client worldwide. Paramedical Artistry services
-                            located on 125 Union Avenue, Orcutt, CA NOTES FOR
-                            LATER: afterpay, square, venmo, paypal, zelle
+                            client worldwide. <br />
+                            Paramedical Artistry services located on 125 Union
+                            Avenue, Orcutt, CA
                         </p>
                     </Col>
                 </Row>

@@ -2,6 +2,7 @@
 .top-panel-container {
   width: 100vw;
   background-color: var(--primary-light-color);
+  justify-content: center;
 }
   
 .top-panel {
@@ -54,6 +55,7 @@ font-family: 'EuphoriaScript','Open Sans', sans-serif;
   color: var(--primary-dark-color) !important;
   font-size: larger;
 }
+
 .top-panel-contents {
   max-width: 1550px;
   margin-right: auto;
