@@ -155,11 +155,3 @@ body {
   margin: 4px;
   border-radius: 3px;
 }
-
-.col {
-  border: 1px dashed green;
-}
-
-.row {
-  border: 1px dashed yellowgreen;
-}

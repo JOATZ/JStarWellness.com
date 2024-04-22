@@ -1,13 +1,13 @@
 /*-----HEADER-----*/
-.top-panel-row {
-background-color: var(--primary-light-color);
+.top-panel-container {
+  width: 100vw;
+  background-color: var(--primary-light-color);
 }
   
 .top-panel {
 display: inline;
 color: var(--primary-dark-color);
 text-decoration: none;
-border: 1px solid black;
 }
 
 .top-panel a {
@@ -28,6 +28,11 @@ border-color: var(--primary-dark-color) !important;
   margin-right: 0.5rem;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-brand h1 {
 font-family: 'EuphoriaScript','Open Sans', sans-serif;
 }
@@ -43,13 +48,22 @@ font-family: 'EuphoriaScript','Open Sans', sans-serif;
     background-color:var(--primary-light-color);
 }
 
-
 .nav-link.active {
   border-bottom: 2px solid var(--primary-dark-color); 
   padding-bottom: 5px;
   color: var(--primary-dark-color) !important;
   font-size: larger;
 }
+.top-panel-contents {
+  max-width: 1550px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
 
-
+@media (min-width: 1600px) {
+  .navbar .container-fluid {
+      max-width: 1600px; 
+  }
+}
 

@@ -10,7 +10,7 @@ import { Col, Row } from 'reactstrap'
 
 const TopPanel = () => {
     return (
-        <Row className='top-panel-row d-none d-lg-flex'>
+        <Row className='top-panel-contents'>
             <Col className='top-panel'>
                 <a
                     role='button'
@@ -28,7 +28,7 @@ const TopPanel = () => {
                     <FaEnvelope /> Stepup2shapeup@gmail.com
                 </a>
             </Col>
-            <Col className='top-panel text-end' lg={{ size: 3 }}>
+            <Col className='top-panel text-end'>
                 <a
                     href='https://facebook.com'
                     target='_blank'
