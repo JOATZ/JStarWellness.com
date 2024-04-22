@@ -7,7 +7,6 @@
 }
 
 .home-page-intro {
-    font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
     font-size: min(4vw, 1.5rem);
     text-align: justify;
     margin: 2rem auto; 
@@ -15,7 +14,7 @@
 }
 
 @media (max-width: 768px) {
-    .home-page-intro {
+    .home-page-intro, .home-page-content p {
       width: 90%;
     }
   }
@@ -29,9 +28,8 @@
     font-size: min(7vw, 8rem);
 }
 
-.home-page-content .row {
-    text-align: justify;
-    margin-top: 1rem;
+.home-page-content h2 {
+    font-size: min(5vw, 2rem);
 }
 
 .home-page-buttons {
@@ -47,7 +45,7 @@
     color: white; 
     border-color: var(--primary-dark-color); 
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .home-page-buttons .btn:nth-child(2) {
@@ -55,5 +53,14 @@
     color: var(--primary-dark-color);
     border-color: var(--primary-dark-color);
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+}
+
+.home-page-content {
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: min(4vw, 1.5rem);
+    text-align: justify;
+    margin: 2rem auto; 
+
 }

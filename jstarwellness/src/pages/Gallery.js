@@ -4,17 +4,19 @@ import NutritionImage from 'app/assets/img/370x370.jpg'
 import { Link } from 'react-router-dom'
 import { Card, CardBody, CardImg, CardTitle, Col, Row } from 'reactstrap'
 
+import './Gallery.css'
+
 const Gallery = () => {
     return (
         <>
-            <Row>
-                <Col md='6' xs='12' className='d-flex justify-content-center'>
+            <Row className='gallery-card-row'>
+                <Col xs='12' sm='5' md='4' lg='3' className='gallery-card-col'>
                     <Link to='/BeforeAndAfterPM'>
                         <Card className='gallery-card'>
                             <CardImg
                                 top
                                 src={ParamedicalImage}
-                                alt='Paramedical Services'
+                                alt='Paramedical Artistry Services'
                             />
                             <CardBody>
                                 <CardTitle tag='h5'>
@@ -24,7 +26,7 @@ const Gallery = () => {
                         </Card>
                     </Link>
                 </Col>
-                <Col md='6' xs='12' className='d-flex justify-content-center'>
+                <Col xs='12' sm='5' md='4' lg='3' className='gallery-card-col'>
                     <Link to='/BeforeAndAfterNT'>
                         <Card className='gallery-card'>
                             <CardImg

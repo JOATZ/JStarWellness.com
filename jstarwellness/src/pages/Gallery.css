@@ -1,0 +1,11 @@
+.gallery-card-row {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.gallery-card-col {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}

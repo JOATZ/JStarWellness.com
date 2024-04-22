@@ -69,11 +69,7 @@ const HomePage = () => {
                         functional movement, all while uniquely aligning with
                         your personal capabilities.
                     </p>
-                </Row>
-                <Row style={{ textAlign: 'justify', marginTop: '50px' }}>
-                    <h2 style={{ textAlign: 'center' }}>
-                        Paramedical Artistry:
-                    </h2>
+                    <h2>Paramedical Artistry:</h2>
                     <p>
                         Additionally, as a skilled paramedical artist I
                         specialize in stretch mark & scar rejuvenation
