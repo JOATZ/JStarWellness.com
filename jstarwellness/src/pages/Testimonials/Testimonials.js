@@ -1,17 +1,21 @@
 import React from 'react'
 import TESTIMONIALS from 'components/Testimonials/TESTIMONIALS'
-import { Card, CardBody, CardImg, CardText, Col, Row } from 'reactstrap'
+import {
+    Card,
+    CardBody,
+    CardImg,
+    CardText,
+    Col,
+    Container,
+    Row
+} from 'reactstrap'
 
 import './Testimonials.css'
 
 const Testimonials = () => {
     return (
-        <Row className='testimonial-intro'>
-            <Col
-                md={{ size: 8, offset: 2 }}
-                xl={{ size: 4, offset: 4 }}
-                className='testimonial-intro-col'
-            >
+        <Container className='testimonial-intro'>
+            <Col className='testimonial-intro-col'>
                 <h2>Testimonials</h2>
                 <p>
                     A message saying something regarding testimonials, hear from
@@ -21,12 +25,7 @@ const Testimonials = () => {
                 </p>
             </Col>
             {TESTIMONIALS.map((testimonial) => (
-                <Col
-                    md={{ size: 8, offset: 2 }}
-                    xl={{ size: 4, offset: 4 }}
-                    key={testimonial.id}
-                    className='testimonial-col'
-                >
+                <Row key={testimonial.id} className='testimonial'>
                     <Card>
                         {testimonial.src && (
                             <CardImg
@@ -42,9 +41,9 @@ const Testimonials = () => {
                             </CardText>
                         </CardBody>
                     </Card>
-                </Col>
+                </Row>
             ))}
-        </Row>
+        </Container>
     )
 }
 

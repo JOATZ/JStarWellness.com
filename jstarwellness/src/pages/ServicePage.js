@@ -8,20 +8,18 @@ import 'pages/ServicePage.css'
 const ServicePage = () => {
     return (
         <Container>
-            <Row>
-                <div>
-                    <h1>Paramedical Artistry Tattooing:</h1>
-                    <p>
-                        Explore the world of non-invasive Paramedical Artistry
-                        Tattooing, an offering that extends beyond wellness into
-                        self-confidence. Jennifer's skilled use of a rotary
-                        machine stimulates your body's natural healing
-                        processes, improving skin texture, depth, and color.
-                        This service is a game-changer for addressing stretch
-                        marks, scars, and other skin concerns.
-                    </p>
-                </div>
-            </Row>
+            <Col className='services-intro-col'>
+                <h2>Paramedical Artistry Tattooing:</h2>
+                <p>
+                    Explore the world of non-invasive Paramedical Artistry
+                    Tattooing, an offering that extends beyond wellness into
+                    self-confidence. Jennifer's skilled use of a rotary machine
+                    stimulates your body's natural healing processes, improving
+                    skin texture, depth, and color. This service is a
+                    game-changer for addressing stretch marks, scars, and other
+                    skin concerns.
+                </p>
+            </Col>
             <Row className='justify-content-center'>
                 {SERVICES.map((service) => (
                     <Col

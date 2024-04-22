@@ -86,6 +86,11 @@ body {
   min-height: 200px;
 }
 
+.card {
+box-shadow: 4px 4px 10px 0 var(--primary-light-color);
+min-height: 100%;
+}
+
 .page-enter {
   opacity: 0;
   transform: translateX(-100%);
