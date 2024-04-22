@@ -6,17 +6,19 @@ import {
     FaPhoneAlt,
     FaTwitterSquare
 } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
 import 'components/Footer/Footer.css'
 
 const Footer = () => {
+    const location = useLocation()
+
     return (
         <footer className='site-footer'>
             <Container fluid className='footer-container'>
                 <Row className='footer-row'>
-                    <Col xs='4' md='5'>
+                    <Col md='4' className='d-none d-md-block'>
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -39,11 +41,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col
-                        xs='8'
-                        md='2'
-                        className='text-center align-self-center'
-                    >
+                    <Col md='4' className='text-center align-self-center'>
                         <IconContext.Provider
                             value={{
                                 className: 'footer-icons'
@@ -63,8 +61,13 @@ const Footer = () => {
                                 <FaTwitterSquare />
                             </a>
                         </IconContext.Provider>
+                        {location.pathname !== '/contact' && (
+                            <Link to='/contact'>
+                                <h5>Payments</h5>
+                            </Link>
+                        )}
                     </Col>
-                    <Col sm='4' md='5' className='text-end d-none d-md-block'>
+                    <Col md='4' className='text-end d-none d-md-block'>
                         <a
                             role='button'
                             className='btn btn-link'
@@ -91,6 +94,12 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+            <p className='footer-copy'>
+                Copyright &copy; {new Date().getFullYear()} J Star Wellnes
+                L.L.C. Web Design by{' '}
+                <a href='https://github.com/JOATZ/'>JOATZ</a>. All rights
+                reserved.
+            </p>
         </footer>
     )
 }

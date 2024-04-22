@@ -17,6 +17,7 @@
 .contact-page-container h2 {
     text-align: center;
 }
+
 .payments {
     display: flex;
     justify-content: center;
@@ -25,7 +26,7 @@
 }
 
 .payments a svg {
-    font-size: 5rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
