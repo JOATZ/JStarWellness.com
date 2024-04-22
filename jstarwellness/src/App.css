@@ -45,6 +45,10 @@
   font-display: swap;
 }
 
+html {
+  font-size: 100%;
+}
+
 p {
   font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
 }

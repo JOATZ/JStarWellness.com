@@ -1,7 +1,7 @@
 /*------Home Page Intro-------*/
 .home-page-header {
     font-family: 'EuphoriaScript','Open Sans', sans-serif;
-    font-size: min(7vw, 8rem);
+    font-size: min(7vw, 6rem);
     text-align: center;
     margin: 2rem auto; 
 }
@@ -25,7 +25,7 @@
 
 .home-page-content h1 {
     font-family: 'EuphoriaScript','Open Sans', sans-serif;
-    font-size: min(7vw, 8rem);
+    font-size: min(7vw, 5rem);
 }
 
 .home-page-content h2 {
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 1rem;
 }
 
 .home-page-buttons .btn:nth-child(1) {
@@ -45,7 +45,7 @@
     color: white; 
     border-color: var(--primary-dark-color); 
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 .home-page-buttons .btn:nth-child(2) {
@@ -53,7 +53,7 @@
     color: var(--primary-dark-color);
     border-color: var(--primary-dark-color);
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 .home-page-content {
