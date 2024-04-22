@@ -1,6 +1,6 @@
 :root {
-  --primary-dark-color: #80428b;
-  --primary-light-color: #f3dcf7;
+  --primary-dark-color: rgb(128, 65, 139);
+  --primary-light-color: rgb(243, 220, 247);
   --accent-color: #f0c808;
   --text-color: #333;
 }
@@ -154,4 +154,12 @@ body {
   box-shadow: 4px 4px 4px 0 var(--primary-light-color);
   margin: 4px;
   border-radius: 3px;
+}
+
+.col {
+  border: 1px dashed green;
+}
+
+.row {
+  border: 1px dashed yellowgreen;
 }
