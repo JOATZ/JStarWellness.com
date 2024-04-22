@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ReactComponent as Logo } from 'app/assets/JStarLogo.svg'
+import { BsFillPatchExclamationFill } from 'react-icons/bs'
 import {
     FaAddressCard,
     FaCamera,
@@ -101,6 +102,15 @@ const Header = () => {
                             <NavItem>
                                 <NavLink className='nav-link' to='/gallery'>
                                     <FaCamera /> Gallery
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    className='nav-link'
+                                    to='/testimonials'
+                                >
+                                    <BsFillPatchExclamationFill />
+                                    Testimonials
                                 </NavLink>
                             </NavItem>
                             <NavItem>

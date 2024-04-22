@@ -8,6 +8,7 @@ import ContactPage from 'pages/ContactPage'
 import Gallery from 'pages/Gallery'
 import HomePage from 'pages/HomePage'
 import ServicePage from 'pages/ServicePage'
+import Testimonials from 'pages/Testimonials/Testimonials'
 import { Provider } from 'react-redux'
 import { Route, Routes } from 'react-router-dom'
 
@@ -25,6 +26,7 @@ function App() {
                         <Route path='contact' element={<ContactPage />} />
                         <Route path='about' element={<AboutPage />} />
                         <Route path='gallery' element={<Gallery />} />
+                        <Route path='testimonials' element={<Testimonials />} />
                         <Route
                             path='BeforeAndAfterNT'
                             element={<BeforeAndAfterNT />}
