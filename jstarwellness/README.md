@@ -2,6 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Technologies and Packages
+
+This project is built using React and a variety of technologies and packages to enhance functionality and user experience. Here's a brief overview:
+
+-   **React**: A JavaScript library for building user interfaces.
+-   **Redux Toolkit & React Redux**: State management tools for React.
+-   **Firebase**: Used for deployment and potentially other backend services.
+-   **Formik**: Building forms in React.
+-   **React Router DOM**: For routing and navigation.
+-   **React Spring**: A spring-physics based animation library.
+-   **Reactstrap and Bootstrap**: For styling and layout.
+-   **React Icons**: To include icons from popular icon libraries.
+-   **React Responsive Carousel**: For creating carousels.
+-   **Typeface Lobster & Open Sans**: Custom fonts.
+-   **ESLint with simple-import-sort plugin**: For code quality and import sorting.
+
+## Copyright and Legal Notice
+
+This project is the sole property of JStar Wellness and JOATZ. All rights reserved. No part of this project, including code, documentation, and assets, may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the owner.
+
+## Contact
+
+Developer contact: theJOATZ@pm.me
+
 ## Available Scripts
 
 In the project directory, you can run:
