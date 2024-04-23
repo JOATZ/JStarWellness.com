@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import CardComponent from 'components/CardComponent'
 import {
     Card,
     CardBody,
@@ -74,16 +75,11 @@ const ReviewsCarousel = (args) => {
             <Row noGutters className='reviews-carousel-row'>
                 {slideItems.map((item, itemIndex) => (
                     <Col key={itemIndex} xs='6' md='4' lg='3'>
-                        <Card className='review-card'>
-                            <CardBody>
-                                <div className='review-content'>
-                                    {item.review}
-                                </div>
-                            </CardBody>
-                            <CardFooter className='review-author'>
-                                -{item.author}
-                            </CardFooter>
-                        </Card>
+                        <CardComponent
+                            cardClassName='review-card'
+                            content={item.review}
+                            footerContent={`- ${item.author}`}
+                        />
                     </Col>
                 ))}
             </Row>

@@ -1,19 +1,9 @@
 /*----reviews carousel----*/
-.review-card {
-    margin: 0px 5px;
-  }
+.custom-review-card {
+  margin: 0px 5px;
+}
 
-  .review-content {
-      font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
-  }
-  
-  .review-card .review-author {
-      text-align: end; 
-      background-color: #f8f9fa;
-      font-family: 'PoppinsExtraLightItalic','Open Sans', sans-serif;
-  }
-
-  .reviews-carousel-row {
-    justify-content: center;
-    padding: 10px;
-  }
+.reviews-carousel-row {
+  justify-content: center;
+  padding: 10px;
+}
