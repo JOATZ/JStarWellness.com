@@ -1,6 +1,6 @@
 import HomeCarousel from 'components/HomePage/HomeCarousel.js'
 import ReviewsCarousel from 'components/HomePage/ReviewsCarousel.js'
-import ServiceTypeCards from 'components/ServicesOfferred/ServiceTypeCards.js'
+import HomePageServiceCards from 'components/ServicesOfferred/HomePageServiceCards.js'
 import { useNavigate } from 'react-router-dom'
 import { Button, Container, Row } from 'reactstrap'
 
@@ -84,7 +84,7 @@ const HomePage = () => {
                     </p>
                 </Row>
             </Container>
-            <ServiceTypeCards />
+            <HomePageServiceCards />
             <Container className='home-page-buttons'>
                 <Button onClick={() => navigate('/about#myApproach')}>
                     Discover why our services and experience stand out!
