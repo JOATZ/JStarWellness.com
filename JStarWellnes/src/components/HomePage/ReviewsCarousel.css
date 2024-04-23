@@ -2,8 +2,18 @@
 .custom-review-card {
   margin: 0px 5px;
 }
+/*flex to push footer down */
+.custom-review-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+/*grow text to push footer down*/
+.custom-review-card .card-text {
+  flex:1;
+}
 
 .reviews-carousel-row {
   justify-content: center;
   padding: 10px;
 }
+

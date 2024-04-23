@@ -1,14 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CardComponent from 'components/CardComponent'
-import {
-    Card,
-    CardBody,
-    CardFooter,
-    Carousel,
-    CarouselItem,
-    Col,
-    Row
-} from 'reactstrap'
+import { Carousel, CarouselItem, Col, Row } from 'reactstrap'
 
 import 'components/HomePage/ReviewsCarousel.css'
 
@@ -55,16 +47,34 @@ const items = [
     }
 ]
 
-const ReviewsCarousel = (args) => {
-    const [activeIndex, setActiveIndex] = useState(0)
+const useWindowSize = () => {
+    const [width, setWidth] = useState(window.innerWidth)
 
-    const chunk = (arr, size) =>
-        arr.length > size
-            ? [arr.slice(0, size), ...chunk(arr.slice(size), size)]
-            : [arr]
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+    return width
+}
+
+const ReviewsCarousel = (args) => {
+    const width = useWindowSize()
+    const [activeIndex, setActiveIndex] = useState(0)
+    const [isTransitioning, setIsTransitioning] = useState(false)
+
+    const chunk = (arr, size) => {
+        let result = []
+        for (let i = 0; i < arr.length; i += size) {
+            result.push(arr.slice(i, i + size))
+        }
+        return result
+    }
 
     const getItemsPerSlide = () => {
-        const width = window.innerWidth
         if (width >= 992) return 4
         if (width >= 768) return 3
         return 2
@@ -87,15 +97,19 @@ const ReviewsCarousel = (args) => {
     ))
 
     const next = () => {
-        const nextIndex =
-            activeIndex === slides.length - 1 ? 0 : activeIndex + 1
-        setActiveIndex(nextIndex)
+        if (!isTransitioning) {
+            const nextIndex =
+                activeIndex === slides.length - 1 ? 0 : activeIndex + 1
+            setActiveIndex(nextIndex)
+        }
     }
 
     const previous = () => {
-        const nextIndex =
-            activeIndex === 0 ? slides.length - 1 : activeIndex - 1
-        setActiveIndex(nextIndex)
+        if (!isTransitioning) {
+            const nextIndex =
+                activeIndex === 0 ? slides.length - 1 : activeIndex - 1
+            setActiveIndex(nextIndex)
+        }
     }
 
     return (
@@ -105,6 +119,8 @@ const ReviewsCarousel = (args) => {
             previous={previous}
             interval={3000}
             pause='hover'
+            onExiting={() => setIsTransitioning(true)}
+            onExited={() => setIsTransitioning(false)}
             {...args}
         >
             {slides}
