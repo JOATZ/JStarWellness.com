@@ -12,7 +12,7 @@ const ServicePage = () => {
         import('pages/BeforeAndAfterNT')
     })
     return (
-        <Container>
+        <Container className='services-page-container'>
             <Col className='services-intro-col'>
                 <h2>Paramedical Artistry Tattooing:</h2>
                 <p>
