@@ -11,13 +11,13 @@ This project is built using React and a variety of technologies and packages to 
 -   **React**: A JavaScript library for building user interfaces.
 -   **Redux Toolkit & React Redux**: State management tools for React.
 -   **Firebase**: Used for deployment and potentially other backend services.
--   **Formik**: Building forms in React.
+-   **Formik**: Building forms in React for later integrations.
 -   **React Router DOM**: For routing and navigation.
 -   **React Spring**: A spring-physics based animation library.
 -   **Reactstrap and Bootstrap**: For styling and layout.
 -   **React Icons**: To include icons from popular icon libraries.
 -   **React Responsive Carousel**: For creating carousels.
--   **Typeface Lobster & Open Sans**: Custom fonts.
+-   **Euphoria Script, Poppins, and Open Sans**: Custom fonts via package and WOFF2.
 -   **ESLint with simple-import-sort plugin**: For code quality and import sorting.
 
 ## Copyright and Legal Notice

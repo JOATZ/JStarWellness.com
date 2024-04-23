@@ -15,7 +15,7 @@ This project is built using React and a variety of technologies and packages to 
 -   **Reactstrap and Bootstrap**: For styling and layout.
 -   **React Icons**: To include icons from popular icon libraries.
 -   **React Responsive Carousel**: For creating carousels.
--   **Typeface Lobster & Open Sans**: Custom fonts.
+-   **Euphoria Script, Poppins, and Open Sans**: Custom fonts via package and WOFF2.
 -   **ESLint with simple-import-sort plugin**: For code quality and import sorting.
 
 ## Copyright and Legal Notice
