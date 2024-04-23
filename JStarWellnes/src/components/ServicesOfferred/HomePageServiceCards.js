@@ -16,7 +16,7 @@ const HomePageServiceCards = () => {
                     altText='Card image cap'
                     buttonClassName='home-page-card-btn'
                     buttonLabel='From $125'
-                    onButtonClick={() => console.log('Button clicked')}
+                    to='/services'
                 />
             </Col>
             <Col md='4' style={{ maxWidth: '370px', margin: '0 10px' }}>
@@ -29,9 +29,7 @@ const HomePageServiceCards = () => {
                     altText='Card image cap'
                     buttonClassName='home-page-card-btn'
                     buttonLabel='From $155'
-                    onButtonClick={() =>
-                        console.log('Nutrition and Training button clicked')
-                    }
+                    to='/services'
                 />
             </Col>
             <Col md='4' style={{ maxWidth: '370px', margin: '0 10px' }}>
@@ -44,11 +42,7 @@ const HomePageServiceCards = () => {
                     altText='Card image cap'
                     buttonClassName='home-page-card-btn'
                     buttonLabel='From $479'
-                    onButtonClick={() =>
-                        console.log(
-                            'Hair Tissue Mineral Analysis button clicked'
-                        )
-                    }
+                    to='/services'
                 />
             </Col>
         </Row>

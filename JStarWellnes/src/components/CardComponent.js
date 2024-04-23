@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
     Button,
     Card,
@@ -19,20 +20,23 @@ const CardComponent = ({
     buttonClassName,
     buttonLabel,
     onButtonClick,
+    to,
     imgPosition,
     cardClassName = '',
     cardBodyChildren = null
 }) => {
+    const isLink = to && !onButtonClick
+
+    const buttonProps = {
+        className: buttonClassName,
+        style: { position: 'relative', width: '100%' },
+        ...(isLink ? { tag: Link, to: to } : { onClick: onButtonClick })
+    }
+
     const renderCardContent = () => (
         <>
-            {buttonLabel && onButtonClick && (
-                <Button
-                    className={buttonClassName}
-                    onClick={onButtonClick}
-                    style={{ position: 'relative', width: '100%' }}
-                >
-                    {buttonLabel}
-                </Button>
+            {buttonLabel && (onButtonClick || to) && (
+                <Button {...buttonProps}>{buttonLabel}</Button>
             )}
             <CardBody>
                 {title && <CardTitle tag='h5'>{title}</CardTitle>}
