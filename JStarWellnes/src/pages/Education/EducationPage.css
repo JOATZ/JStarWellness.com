@@ -1,0 +1,37 @@
+.education-intro-col{
+    text-align: center;
+}
+
+.custom-article-item-col {
+    margin: 10px;
+}
+
+.custom-article-item-card .read-article-btn {
+    border-color: var(--primary-dark-color);
+    background-color: var(--primary-dark-color);
+}
+
+.custom-article-item-card .read-article-btn:hover {
+    border-color: var(--primary-dark-color);
+    background-color: var(--primary-light-color);
+    color: var(--primary-dark-color);
+}
+
+.card-footer {
+    text-align: end;
+}
+
+.custom-article-item-card .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.modal .btn-close:hover {
+    background-color: var(--primary-dark-color);
+    color: white;
+}
+

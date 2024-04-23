@@ -17,6 +17,7 @@ const HomePageServiceCards = () => {
                     buttonClassName='home-page-card-btn'
                     buttonLabel='From $125'
                     to='/services'
+                    midButton={true}
                 />
             </Col>
             <Col md='4' style={{ maxWidth: '370px', margin: '0 10px' }}>
@@ -30,6 +31,7 @@ const HomePageServiceCards = () => {
                     buttonClassName='home-page-card-btn'
                     buttonLabel='From $155'
                     to='/services'
+                    midButton={true}
                 />
             </Col>
             <Col md='4' style={{ maxWidth: '370px', margin: '0 10px' }}>
@@ -43,6 +45,7 @@ const HomePageServiceCards = () => {
                     buttonClassName='home-page-card-btn'
                     buttonLabel='From $479'
                     to='/services'
+                    midButton={true}
                 />
             </Col>
         </Row>

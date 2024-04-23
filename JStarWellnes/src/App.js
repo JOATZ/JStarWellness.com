@@ -5,6 +5,7 @@ import AboutPage from 'pages/About'
 import BeforeAndAfterNT from 'pages/BeforeAndAfterNT'
 import BeforeAndAfterPM from 'pages/BeforeAndAfterPM'
 import ContactPage from 'pages/ContactPage'
+import EducationPage from 'pages/Education/EducationPage'
 import Gallery from 'pages/Gallery'
 import HomePage from 'pages/HomePage'
 import ServicePage from 'pages/ServicePage'
@@ -22,11 +23,12 @@ function App() {
                 <div className='app-content'>
                     <Routes>
                         <Route path='/' element={<HomePage />} />
-                        <Route path='services' element={<ServicePage />} />
-                        <Route path='contact' element={<ContactPage />} />
-                        <Route path='about' element={<AboutPage />} />
-                        <Route path='gallery' element={<Gallery />} />
-                        <Route path='testimonials' element={<Testimonials />} />
+                        <Route path='Services' element={<ServicePage />} />
+                        <Route path='Education' element={<EducationPage />} />
+                        <Route path='Contact' element={<ContactPage />} />
+                        <Route path='About' element={<AboutPage />} />
+                        <Route path='Gallery' element={<Gallery />} />
+                        <Route path='Testimonials' element={<Testimonials />} />
                         <Route
                             path='BeforeAndAfterNT'
                             element={<BeforeAndAfterNT />}

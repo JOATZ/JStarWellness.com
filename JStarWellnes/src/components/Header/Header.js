@@ -3,6 +3,7 @@ import LogoImg from 'app/assets/JStarRqlapf.png'
 import { BsFillPatchExclamationFill } from 'react-icons/bs'
 import {
     FaAddressCard,
+    FaBrain,
     FaCamera,
     FaHome,
     FaInfoCircle,
@@ -82,7 +83,7 @@ const Header = () => {
                     </Col>
                 </Row>
             </Container>
-            <Navbar dark sticky='top' expand='lg'>
+            <Navbar dark sticky='top' expand='xl'>
                 <NavbarBrand className='ms-5'>
                     <Link to='/'>
                         <img
@@ -115,6 +116,15 @@ const Header = () => {
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaList /> Services
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink
+                                className='nav-link'
+                                to='/education'
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                <FaBrain /> Education
                             </NavLink>
                         </NavItem>
                         <NavItem>

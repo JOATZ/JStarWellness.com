@@ -4,6 +4,7 @@ import {
     Button,
     Card,
     CardBody,
+    CardFooter,
     CardImg,
     CardText,
     CardTitle,
@@ -23,7 +24,8 @@ const CardComponent = ({
     to,
     imgPosition,
     cardClassName = '',
-    cardBodyChildren = null
+    cardBodyChildren = null,
+    midButton = false
 }) => {
     const isLink = to && !onButtonClick
 
@@ -35,14 +37,17 @@ const CardComponent = ({
 
     const renderCardContent = () => (
         <>
-            {buttonLabel && (onButtonClick || to) && (
+            {midButton && buttonLabel && (onButtonClick || to) && (
                 <Button {...buttonProps}>{buttonLabel}</Button>
             )}
             <CardBody>
                 {title && <CardTitle tag='h5'>{title}</CardTitle>}
                 {content && <CardText>{content}</CardText>}
                 {cardBodyChildren}
-                {footerContent && <CardText>{footerContent}</CardText>}
+                {footerContent && <CardFooter>{footerContent}</CardFooter>}
+                {!midButton && buttonLabel && (onButtonClick || to) && (
+                    <Button {...buttonProps}>{buttonLabel}</Button>
+                )}
             </CardBody>
         </>
     )
