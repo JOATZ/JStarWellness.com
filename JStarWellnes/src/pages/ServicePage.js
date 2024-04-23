@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CardComponent from 'components/CardComponent'
 import SERVICES from 'components/ServicesOfferred/SERVICES.js'
 import { Link } from 'react-router-dom'
@@ -7,6 +7,10 @@ import { Button, Col, Container, Row } from 'reactstrap'
 import 'pages/ServicePage.css'
 
 const ServicePage = () => {
+    useEffect(() => {
+        import('pages/BeforeAndAfterPM')
+        import('pages/BeforeAndAfterNT')
+    })
     return (
         <Container>
             <Col className='services-intro-col'>

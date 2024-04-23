@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ParamedicalImage from 'app/assets/img/370x370.jpg'
 import NutritionImage from 'app/assets/img/370x370.jpg'
 import CardComponent from 'components/CardComponent'
@@ -8,6 +8,10 @@ import { Col, Row } from 'reactstrap'
 import './Gallery.css'
 
 const Gallery = () => {
+    useEffect(() => {
+        import('pages/BeforeAndAfterPM')
+        import('pages/BeforeAndAfterNT')
+    })
     return (
         <Row className='gallery-card-row'>
             <Col xs='12' sm='5' md='4' lg='3' className='gallery-card-col'>
