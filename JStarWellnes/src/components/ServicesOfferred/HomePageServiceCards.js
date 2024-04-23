@@ -11,6 +11,7 @@ const HomePageServiceCards = () => {
                     cardClassName='home-page-card'
                     title='Paramedical Artistry'
                     content='Specialized services in Paramedicla Artistry.'
+                    imgPosition='top'
                     src={CardPic}
                     altText='Card image cap'
                     buttonClassName='home-page-card-btn'
@@ -23,6 +24,7 @@ const HomePageServiceCards = () => {
                     cardClassName='home-page-card'
                     title='Nutrition and Training'
                     content='Comprehensive guidance on nutrition and fitness for all performance levels.'
+                    imgPosition='top'
                     src={CardPic}
                     altText='Card image cap'
                     buttonClassName='home-page-card-btn'
@@ -37,6 +39,7 @@ const HomePageServiceCards = () => {
                     cardClassName='home-page-card'
                     title='Hair Tissue Mineral Analysis'
                     content='Detailed analysis of hair tissue minerals. Includes a tailored detox and 1 hour consultation results.'
+                    imgPosition='top'
                     src={CardPic}
                     altText='Card image cap'
                     buttonClassName='home-page-card-btn'

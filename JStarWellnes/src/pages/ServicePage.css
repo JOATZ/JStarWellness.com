@@ -1,14 +1,18 @@
+.services-intro-col {
+    margin: 0.5rem;
+}
+
 .service-item-card-col {
    margin: .5rem;
 }
 
-.service-item h5 {
+.custom-service-item-card .card-title {
     font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
     font-size: 1rem;
     margin: 1rem 0;
 }
   
-.service-item-card p {
+.custom-service-item-card .card-text {
     font-family: 'PoppinsExtraLight','Open Sans', sans-serif;
     text-align: justify;
 }
@@ -25,3 +29,5 @@
     justify-content: center;
     padding: .5rem;
 }
+
+

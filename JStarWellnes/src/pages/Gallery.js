@@ -17,6 +17,7 @@ const Gallery = () => {
                         title='Paramedical Artistry'
                         content=''
                         src={ParamedicalImage}
+                        imgPosition='top'
                         altText='Paramedical Artistry Services'
                     />
                 </Link>
@@ -28,6 +29,7 @@ const Gallery = () => {
                         title='Nutrition and Training'
                         content=''
                         src={NutritionImage}
+                        imgPosition='top'
                         altText='Nutrition and Training Services'
                     />
                 </Link>
