@@ -60,7 +60,7 @@ const CardComponent = ({
                 <CardImg top src={src} alt={altText} />
             )}
             {imgPosition === 'start' && src && (
-                <Row noGutters>
+                <Row noGutters className='card-img-row'>
                     <Col md={3} className='card-img-col'>
                         <CardImg src={src} alt={altText} />
                     </Col>

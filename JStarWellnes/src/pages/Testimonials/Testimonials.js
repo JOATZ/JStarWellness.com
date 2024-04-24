@@ -20,7 +20,7 @@ const Testimonials = () => {
             <Row className='justify-content-center'>
                 {TESTIMONIALS.map((testimonial) => (
                     <Col
-                        md='10'
+                        md='9'
                         key={testimonial.id}
                         className='service-item-card-col' // Adjust class name as needed
                     >
