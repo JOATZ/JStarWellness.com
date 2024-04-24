@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import LogoImg from 'app/assets/JStarRqlapf.png'
+import LogoImg from 'app/assets/JStarRqlapf.webp'
 import { BsFillPatchExclamationFill } from 'react-icons/bs'
 import {
     FaAddressCard,
