@@ -56,6 +56,13 @@
     font-size: 1rem;
 }
 
+.home-page-buttons .btn:hover {
+    background-color: var(--primary-light-color);
+    border-color: var(--primary-light-color);
+    color: var(--primary-dark-color);
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
 .home-page-content {
     text-align: justify;
     margin-top: 1rem;
@@ -83,6 +90,13 @@
     background-color: var(--primary-light-color);
     color: var(--primary-dark-color);
     border-color: transparent;
+}
+
+.custom-home-page-card .btn:hover {
+    background-color: var(--primary-dark-color);
+    border-color: var(--primary-dark-color);
+    color: white;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 .custom-home-page-card .card-title {

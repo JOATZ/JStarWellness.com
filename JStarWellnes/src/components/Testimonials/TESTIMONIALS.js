@@ -98,6 +98,16 @@ const TESTIMONIALS = [
         stars: null,
         service: '',
         src: ''
+    },
+    {
+        id: 10,
+        statement:
+            "I started this fitness journey when I was overweight from 18-early 20s. My goal has always been to be healthy and fit. Now, at 30, I'm finally meeting that goal. This 6-week plan has been the most inspirational and I've lost inches and 10lbs!!! Not only am I following meal plans and workouts, I'm actually SUCCEEDING for the first time in my life and meeting a life-long goal of being healthy and fit AND I eat more food more often then before. It has made me more disciplined and I feel like the best version of myself! Thank you Jenn for inspiring me and teaching me how to live a healthy lifestyle. I look forward to another 6 weeks on the plan and the rest of my lifetime fitness journey!",
+        author: 'Ryan',
+        date: null,
+        stars: null,
+        service: '',
+        src: ''
     }
 ]
 
