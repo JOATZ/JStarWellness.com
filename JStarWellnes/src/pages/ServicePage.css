@@ -1,19 +1,13 @@
-.services-page-container {
-    padding: 40px 10px 10px;
-    text-align: center;
-}
 .services-intro-col {
-    margin: 0.5rem;
+    text-align: justify;
+}
+
+.services-intro-col h2 {
+    text-align: center;
 }
 
 .service-item-card-col {
    margin: .5rem;
-}
-
-.custom-service-item-card .card-title {
-    font-family: 'PoppinsSemiBold','Open Sans', sans-serif;
-    font-size: 1rem;
-    margin: 1rem 0;
 }
   
 .custom-service-item-card .card-text {
@@ -21,17 +15,15 @@
     text-align: justify;
 }
 
-.service-item-card img {
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.service-item-col {
+.card-img-col {
     display: flex;
     justify-content: center;
-    padding: .5rem;
+    align-items: center;
 }
 
+.custom-service-item-card img {
+    width: 100%;       
+    height: auto;     
+    object-fit: contain; 
+}
 

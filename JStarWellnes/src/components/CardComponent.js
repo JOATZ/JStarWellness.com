@@ -13,19 +13,19 @@ import {
 } from 'reactstrap'
 
 const CardComponent = ({
+    cardClassName = '',
     title,
     content,
-    src,
-    altText,
     footerContent,
     buttonClassName,
     buttonLabel,
     onButtonClick,
-    to,
     imgPosition,
-    cardClassName = '',
+    src,
+    altText,
     cardBodyChildren = null,
-    midButton = false
+    midButton = false,
+    to
 }) => {
     const isLink = to && !onButtonClick
 
@@ -59,18 +59,20 @@ const CardComponent = ({
             {imgPosition === 'top' && src && (
                 <CardImg top src={src} alt={altText} />
             )}
-            {imgPosition !== 'start' && renderCardContent()}
             {imgPosition === 'start' && src && (
                 <Row noGutters>
-                    <Col md={4}>
+                    <Col md={3} className='card-img-col'>
                         <CardImg src={src} alt={altText} />
                     </Col>
-                    <Col md={8}>{renderCardContent()}</Col>
+                    <Col md={9} className='card-content-col'>
+                        {renderCardContent()}
+                    </Col>
                 </Row>
             )}
             {imgPosition === 'bottom' && src && (
                 <CardImg bottom src={src} alt={altText} />
             )}
+            {imgPosition !== 'start' && renderCardContent()}
         </Card>
     )
 }

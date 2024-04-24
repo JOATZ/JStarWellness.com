@@ -1,22 +1,21 @@
 import React from 'react'
 import pmImages from 'components/beforeAfter/pm/pm.js'
 import CardComponent from 'components/CardComponent.js' // Updated import
-import { Col, Row } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 
 import 'pages/BeforeAndAfter.css'
 
 const BeforeAndAfterPM = () => {
     return (
-        <div>
+        <Container>
             <Row>
                 {pmImages.map((image) => (
                     <Col
                         xl='3'
                         lg='4'
                         md='6'
-                        xs='12'
                         key={image.clientId}
-                        className='d-flex justify-content-center'
+                        className='before-after-card-col'
                     >
                         <CardComponent
                             cardClassName='before-after-card' // Ensure this matches your CSS class
@@ -29,7 +28,7 @@ const BeforeAndAfterPM = () => {
                     </Col>
                 ))}
             </Row>
-        </div>
+        </Container>
     )
 }
 

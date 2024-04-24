@@ -1,11 +1,11 @@
 import React from 'react'
 import ntImages from 'components/beforeAfter/nt/nt.js'
 import CardComponent from 'components/CardComponent.js' // Updated import
-import { Col, Row } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 
 const BeforeAndAfterNT = () => {
     return (
-        <div>
+        <Container>
             <Row>
                 {ntImages.map((image) => (
                     <Col
@@ -13,7 +13,7 @@ const BeforeAndAfterNT = () => {
                         lg='4'
                         md='6'
                         key={image.clientId}
-                        className='d-flex justify-content-center'
+                        className='before-after-card-col'
                     >
                         <CardComponent
                             cardClassName='before-after-card' // Ensure this matches your CSS class
@@ -26,7 +26,7 @@ const BeforeAndAfterNT = () => {
                     </Col>
                 ))}
             </Row>
-        </div>
+        </Container>
     )
 }
 

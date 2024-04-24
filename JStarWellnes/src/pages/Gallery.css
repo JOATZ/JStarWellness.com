@@ -13,3 +13,7 @@
 .custom-gallery-card .card-body {
     text-align: center;
 }
+
+img {
+border-radius: 5px;
+}

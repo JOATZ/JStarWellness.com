@@ -26,9 +26,11 @@ const EducationPage = () => {
     }
     return (
         <Container>
-            <Col className='education-intro-col'>
-                <h2>Education</h2>
-            </Col>
+            <Row>
+                <Col className='education-intro-col mt-3'>
+                    <h2>Education</h2>
+                </Col>
+            </Row>
             <Row className='justify-content-center' noGutters>
                 {EDUCATION.map((article) => (
                     <Col
