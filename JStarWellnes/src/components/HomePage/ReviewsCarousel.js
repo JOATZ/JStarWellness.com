@@ -89,6 +89,7 @@ const ReviewsCarousel = (args) => {
                             cardClassName='review-card'
                             content={item.review}
                             footerContent={`- ${item.author}`}
+                            altText={`review card by ${item.author}`}
                         />
                     </Col>
                 ))}

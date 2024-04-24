@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import ParamedicalImage from 'app/assets/img/370x370.jpg'
-import NutritionImage from 'app/assets/img/370x370.jpg'
+import ParamedicalImage from 'app/assets/img/370x370.webp'
+import NutritionImage from 'app/assets/img/370x370.webp'
 import CardComponent from 'components/CardComponent'
 import { Link } from 'react-router-dom'
 import { Col, Row } from 'reactstrap'
@@ -14,7 +14,7 @@ const Gallery = () => {
     })
     return (
         <Row className='gallery-card-row'>
-            <Col xs='12' sm='5' md='4' lg='3' className='gallery-card-col'>
+            <Col sm='5' md='4' lg='3' className='gallery-card-col'>
                 <Link to='/BeforeAndAfterPM'>
                     <CardComponent
                         cardClassName='gallery-card'
@@ -26,7 +26,7 @@ const Gallery = () => {
                     />
                 </Link>
             </Col>
-            <Col xs='12' sm='5' md='4' lg='3' className='gallery-card-col'>
+            <Col sm='5' md='4' lg='3' className='gallery-card-col'>
                 <Link to='/BeforeAndAfterNT'>
                     <CardComponent
                         cardClassName='gallery-card'

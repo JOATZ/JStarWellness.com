@@ -1,5 +1,5 @@
 import React from 'react'
-import CardPic from 'app/assets/img/370x370.jpg'
+import CardPic from 'app/assets/img/370x370.webp'
 import CardComponent from 'components/CardComponent'
 import { Col, Row } from 'reactstrap'
 

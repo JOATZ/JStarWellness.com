@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import Pic from 'app/assets/img/1170x700.jpg'
+import Pic from 'app/assets/img/1170x700.webp'
 import {
     Carousel,
     CarouselCaption,
@@ -14,18 +14,21 @@ const items = [
     {
         src: Pic,
         altText: 'Slide 1',
+        header: 'Slide 1 Head',
         caption: 'Slide 1',
         key: 1
     },
     {
         src: Pic,
         altText: 'Slide 2',
+        header: 'Slide 2 Head',
         caption: 'Slide 2',
         key: 2
     },
     {
         src: Pic,
         altText: 'Slide 3',
+        header: 'Slide 3 Head',
         caption: 'Slide 3',
         key: 3
     }
@@ -63,10 +66,17 @@ const HomeCarousel = (args) => {
             onExited={() => setAnimating(false)}
             key={item.key}
         >
-            <img src={item.src} alt={item.altText} />
+            <img
+                src={item.src}
+                alt={item.altText}
+                width='1170'
+                height='700'
+                className='carousel-image'
+            />
             <CarouselCaption
+                captionHeader={item.header}
                 captionText={item.caption}
-                captionHeader={item.caption}
+                aria-label={item.altText}
             />
         </CarouselItem>
     ))
@@ -82,17 +92,20 @@ const HomeCarousel = (args) => {
                 items={items}
                 activeIndex={activeIndex}
                 onClickHandler={goToIndex}
+                aria-label='carousel indicators'
             />
             {slides}
             <CarouselControl
                 direction='prev'
                 directionText='Previous'
                 onClickHandler={previous}
+                aria-label='carousel previous'
             />
             <CarouselControl
                 direction='next'
                 directionText='Next'
                 onClickHandler={next}
+                aria-label='carousel next'
             />
         </Carousel>
     )

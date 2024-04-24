@@ -43,6 +43,7 @@ const Header = () => {
                             role='button'
                             className='btn btn-link'
                             href='tel:+18052687565'
+                            aria-label='Call us'
                         >
                             <FaPhoneAlt /> 1-805-268-7565
                         </a>
@@ -51,6 +52,7 @@ const Header = () => {
                             role='button'
                             className='btn btn-link'
                             href='mailto:Stepup2shapeup@gmail.com'
+                            aria-label='Email us'
                         >
                             <FaEnvelope /> Stepup2shapeup@gmail.com
                         </a>
@@ -61,6 +63,7 @@ const Header = () => {
                             target='_blank'
                             rel='noopener noreferrer'
                             className='me-2'
+                            aria-label='Visit our Facebook page'
                         >
                             <FaFacebookSquare />
                         </a>
@@ -69,6 +72,7 @@ const Header = () => {
                             target='_blank'
                             rel='noopener noreferrer'
                             className='me-2'
+                            aria-label='Visit our Instagram page'
                         >
                             <FaInstagramSquare />
                         </a>
@@ -77,6 +81,7 @@ const Header = () => {
                             target='_blank'
                             rel='noopener noreferrer'
                             className='me-2'
+                            aria-label='Visit our Twitter page'
                         >
                             <FaTwitterSquare />
                         </a>
@@ -85,7 +90,7 @@ const Header = () => {
             </Container>
             <Navbar dark sticky='top' expand='xl'>
                 <NavbarBrand className='ms-5'>
-                    <Link to='/'>
+                    <Link to='/' aria-label='J Star Wellness Home'>
                         <img
                             src={LogoImg}
                             className='float-start'
@@ -103,6 +108,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/'
+                                aria-label='Home'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaHome />
@@ -113,6 +119,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/services'
+                                aria-label='View services'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaList /> Services
@@ -122,6 +129,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/education'
+                                aria-label='View education'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaBrain /> Education
@@ -131,6 +139,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/gallery'
+                                aria-label='View gallery'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaCamera /> Gallery
@@ -140,6 +149,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/testimonials'
+                                aria-label='View testimonials'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <BsFillPatchExclamationFill />
@@ -150,6 +160,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/about'
+                                aria-label='About JStar Wellness'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaInfoCircle /> About
@@ -159,6 +170,7 @@ const Header = () => {
                             <NavLink
                                 className='nav-link'
                                 to='/contact'
+                                aria-label='View contact information'
                                 onClick={() => setMenuOpen(false)}
                             >
                                 <FaAddressCard />

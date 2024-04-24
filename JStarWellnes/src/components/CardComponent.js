@@ -52,7 +52,10 @@ const CardComponent = ({
         </>
     )
     return (
-        <Card className={`custom-${cardClassName}`}>
+        <Card
+            className={`custom-${cardClassName}`}
+            aria-labelledby={`${title}-card`}
+        >
             {imgPosition === 'top' && src && (
                 <CardImg top src={src} alt={altText} />
             )}

@@ -1,6 +1,6 @@
 import React from 'react'
-import BeforeAfterCard from 'components/beforeAfter/BeforeAfterCard.js'
 import pmImages from 'components/beforeAfter/pm/pm.js'
+import CardComponent from 'components/CardComponent.js' // Updated import
 import { Col, Row } from 'reactstrap'
 
 import 'pages/BeforeAndAfter.css'
@@ -18,11 +18,13 @@ const BeforeAndAfterPM = () => {
                         key={image.clientId}
                         className='d-flex justify-content-center'
                     >
-                        <BeforeAfterCard
-                            headline={image.headline}
-                            author={image.author}
+                        <CardComponent
+                            cardClassName='before-after-card' // Ensure this matches your CSS class
+                            title={image.headline}
                             content={image.content}
                             src={image.src}
+                            imgPosition='top'
+                            altText={image.headline} // Assuming you want to use headline as altText
                         />
                     </Col>
                 ))}
