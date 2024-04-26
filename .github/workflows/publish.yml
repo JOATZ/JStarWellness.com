@@ -28,11 +28,16 @@ jobs:
 
             - name: Setup Firebase Service Account
               run: |
-                  echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS }}" > ./firebase-service-account.json
+                  echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS }}" > firebase-service-account.json
                   echo "GOOGLE_APPLICATION_CREDENTIALS=${{ github.workspace }}/firebase-service-account.json" >> $GITHUB_ENV
 
             - name: Configure Firebase Project
-              run: firebase use jstarwellness
+              run: |
+                  export GOOGLE_APPLICATION_CREDENTIALS=${{ github.workspace }}/firebase-service-account.json
+                  firebase use jstarwellness
+
+            - name: List files
+              run: ls -la
 
             - name: Run publish script
               run: npm run publish
