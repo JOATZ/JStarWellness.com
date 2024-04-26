@@ -1,11 +1,11 @@
+import Client1 from 'app/assets/img/gallery/ClientComp1.webp'
+import Client2 from 'app/assets/img/gallery/ClientComp2.webp'
+import Client4 from 'app/assets/img/gallery/ClientComp4.webp'
+import FitPic1 from 'app/assets/img/gallery/Fit1.webp'
+import JennComp1 from 'app/assets/img/gallery/JennComp1.webp'
+import JennComp2 from 'app/assets/img/gallery/JennComp2.webp'
+import Client3 from 'app/assets/img/gallery/pic9.webp'
 import ProfilePic from 'app/assets/img/JennProfilePic.webp'
-import Client1 from 'app/assets/img/nt/ClientComp1.webp'
-import Client2 from 'app/assets/img/nt/ClientComp2.webp'
-import Client4 from 'app/assets/img/nt/ClientComp4.webp'
-import FitPic1 from 'app/assets/img/nt/Fit1.webp'
-import JennComp1 from 'app/assets/img/nt/JennComp1.webp'
-import JennComp2 from 'app/assets/img/nt/JennComp2.webp'
-import Client3 from 'app/assets/img/nt/pic9.webp'
 import { Col, Container, Row } from 'reactstrap'
 
 const About = () => {

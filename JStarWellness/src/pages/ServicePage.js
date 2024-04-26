@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react'
 import CardComponent from 'components/CardComponent'
-import { Link } from 'react-router-dom'
-import { Button, Col, Container, Row } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 
 import 'css/ServicePage.css'
 
 import SERVICES from 'SITE_DATA/SERVICES.js'
 
 const ServicePage = () => {
-    useEffect(() => {
-        import('pages/BeforeAndAfterPM')
-        import('pages/BeforeAndAfterNT')
-    })
+    useEffect(() => {})
     return (
         <Container className='services-page-container'>
             <Row>
@@ -61,22 +57,6 @@ const ServicePage = () => {
                     )
                 )}
             </Row>
-            <Row className=''>
-                <Col className='text-center'>
-                    <Button
-                        tag={Link}
-                        to='/BeforeAndAfterPM'
-                        style={{
-                            backgroundColor: 'var(--primary-dark-color)',
-                            borderColor: 'var(--primary-dark-color)',
-                            fontSize: '1.5rem',
-                            margin: '0.5rem'
-                        }}
-                    >
-                        See Paramedical Artistry Results!
-                    </Button>
-                </Col>
-            </Row>
             <Col className='services-intro-col' md={{ size: 8, offset: 2 }}>
                 <h2>Nutrition and Training</h2>
                 <p>
@@ -123,22 +103,6 @@ const ServicePage = () => {
                         </Col>
                     )
                 )}
-            </Row>
-            <Row className='justify-content-center'>
-                <Col className='text-center'>
-                    <Button
-                        tag={Link}
-                        to='/beforeAndAfterNT'
-                        style={{
-                            backgroundColor: 'var(--primary-dark-color)',
-                            borderColor: 'var(--primary-dark-color)',
-                            fontSize: '1.5rem',
-                            margin: '0.5rem'
-                        }}
-                    >
-                        See Nutrition and Training Results!
-                    </Button>
-                </Col>
             </Row>
         </Container>
     )

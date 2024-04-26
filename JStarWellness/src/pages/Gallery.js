@@ -1,44 +1,33 @@
-import React, { useEffect } from 'react'
-import ParamedicalImage from 'app/assets/img/370x370.webp'
-import NutritionImage from 'app/assets/img/370x370.webp'
+import React from 'react'
 import CardComponent from 'components/CardComponent'
-import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
 import 'css/Gallery.css'
 
+import galleryImages from 'SITE_DATA/GALLERY.js'
+
 const Gallery = () => {
-    useEffect(() => {
-        import('pages/BeforeAndAfterPM')
-        import('pages/BeforeAndAfterNT')
-    })
     return (
         <Container>
-            <Row className='gallery-card-row'>
-                <Col sm='5' md='4' lg='3' className='gallery-card-col'>
-                    <Link to='/BeforeAndAfterPM'>
+            <Row>
+                {galleryImages.map((image) => (
+                    <Col
+                        xl='3'
+                        lg='4'
+                        md='6'
+                        key={image.id}
+                        className='before-after-card-col'
+                    >
                         <CardComponent
-                            cardClassName='gallery-card'
-                            title='Paramedical Artistry'
-                            content=''
-                            src={ParamedicalImage}
+                            cardClassName='before-after-card'
+                            title={image.headline}
+                            content={image.content}
+                            src={image.src}
                             imgPosition='top'
-                            altText='Paramedical Artistry Services'
+                            altText={image.headline}
                         />
-                    </Link>
-                </Col>
-                <Col sm='5' md='4' lg='3' className='gallery-card-col'>
-                    <Link to='/BeforeAndAfterNT'>
-                        <CardComponent
-                            cardClassName='gallery-card'
-                            title='Nutrition and Training'
-                            content=''
-                            src={NutritionImage}
-                            imgPosition='top'
-                            altText='Nutrition and Training Services'
-                        />
-                    </Link>
-                </Col>
+                    </Col>
+                ))}
             </Row>
         </Container>
     )

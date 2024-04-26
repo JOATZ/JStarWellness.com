@@ -8,8 +8,6 @@ import { Route, Routes } from 'react-router-dom'
 
 import 'css/App.css'
 const AboutPage = lazy(() => import('pages/About'))
-const BeforeAndAfterNT = lazy(() => import('pages/BeforeAndAfterNT'))
-const BeforeAndAfterPM = lazy(() => import('pages/BeforeAndAfterPM'))
 const ContactPage = lazy(() => import('pages/ContactPage'))
 const EducationPage = lazy(() => import('pages/EducationPage'))
 const Gallery = lazy(() => import('pages/Gallery'))
@@ -44,14 +42,6 @@ function App() {
                             <Route
                                 path='Testimonials'
                                 element={<Testimonials />}
-                            />
-                            <Route
-                                path='BeforeAndAfterNT'
-                                element={<BeforeAndAfterNT />}
-                            />
-                            <Route
-                                path='BeforeAndAfterPM'
-                                element={<BeforeAndAfterPM />}
                             />
                         </Routes>
                     </Suspense>
