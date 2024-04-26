@@ -22,5 +22,6 @@ jobs:
 
             - name: Run publish script
               run: npm run publish
+              working-directory: ./JStarWellness
               env:
                   CI: true
