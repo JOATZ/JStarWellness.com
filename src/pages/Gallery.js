@@ -4,10 +4,9 @@ import { Col, Container, Row } from 'reactstrap'
 
 import 'css/Gallery.css'
 
-import GalleryImages from 'SITE_DATA/GALLERY.js'
+import galleryImages from 'SITE_DATA/GALLERY.js'
 
 const Gallery = () => {
-    const galleryImages = GalleryImages()
     return (
         <Container>
             <Row>
