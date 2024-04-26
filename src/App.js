@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from 'react'
+import React, { lazy, Suspense } from 'react'
 import { store } from 'app/store'
 import Footer from 'components/Footer.js'
 import Header from 'components/Header.js'
@@ -15,14 +15,6 @@ const ServicePage = lazy(() => import('pages/ServicePage'))
 const Testimonials = lazy(() => import('pages/Testimonials.js'))
 
 function App() {
-    useEffect(() => {
-        import('pages/About')
-        import('pages/ContactPage')
-        import('pages/EducationPage')
-        import('pages/Gallery')
-        import('pages/ServicePage')
-        import('pages/Testimonials')
-    }, [])
     return (
         <Provider store={store}>
             <div className='App'>

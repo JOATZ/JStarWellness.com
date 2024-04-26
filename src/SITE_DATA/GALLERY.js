@@ -1,7 +1,7 @@
 function importAll(r) {
     let images = {}
     try {
-        r.keys().forEach((item, index) => {
+        r.keys().forEach((item) => {
             images[item.replace('./', '')] = r(item)
         })
     } catch (error) {
@@ -16,7 +16,7 @@ const images = importAll(
 
 const galleryImages = [
     {
-        id: 'gal1',
+        id: '1',
         headline: 'Competition ready in X weeks!',
         service: 'Complete NT Plan',
         content:
@@ -25,7 +25,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal8',
+        id: '8',
         headline: 'Stretch Marks Removed after X',
         service: 'Stretch Mark Removal',
         content:
@@ -34,7 +34,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal2',
+        id: '2',
         headline: 'Transformation 2',
         service: 'service 2',
         content: 'Content about transformation 2',
@@ -42,7 +42,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal3',
+        id: '3',
         headline: 'Transformation 3',
         service: 'service 3',
         content: 'Content about transformation 3',
@@ -50,7 +50,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal4',
+        id: '4',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -58,7 +58,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal5',
+        id: '5',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -66,7 +66,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal6',
+        id: '6',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -74,7 +74,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal7',
+        id: '7',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -82,7 +82,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal9',
+        id: '9',
         headline: 'Transformation 2',
         service: 'service 2',
         content: 'Content about transformation 2',
@@ -90,7 +90,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal10',
+        id: '10',
         headline: 'Transformation 3',
         service: 'service 3',
         content: 'Content about transformation 3',
@@ -98,7 +98,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal11',
+        id: '11',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -106,7 +106,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal12',
+        id: '12',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -114,7 +114,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal13',
+        id: '13',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -122,7 +122,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal14',
+        id: '14',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -130,7 +130,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal15',
+        id: '15',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
@@ -138,7 +138,7 @@ const galleryImages = [
         url: '/services'
     },
     {
-        id: 'gal16',
+        id: '16',
         headline: 'Transformation 4',
         service: 'service 4',
         content: 'Content about transformation 4',
