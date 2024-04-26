@@ -4,7 +4,7 @@ import { IoLogoVenmo } from 'react-icons/io5'
 import { SiAfterpay, SiPaypal, SiSquare, SiZelle } from 'react-icons/si'
 import { Col, Container, Row } from 'reactstrap'
 
-import 'pages/ContactPage.css'
+import 'css/ContactPage.css'
 
 const ContactPage = () => {
     return (

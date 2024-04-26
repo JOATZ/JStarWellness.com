@@ -1,7 +1,10 @@
 import React from 'react'
-import ntImages from 'components/beforeAfter/nt/nt.js'
-import CardComponent from 'components/CardComponent.js' // Updated import
+import CardComponent from 'components/CardComponent.js'
 import { Col, Container, Row } from 'reactstrap'
+
+import 'css/BeforeAndAfter.css'
+
+import ntImages from 'SITE_DATA/BnANT.js'
 
 const BeforeAndAfterNT = () => {
     return (
@@ -16,12 +19,12 @@ const BeforeAndAfterNT = () => {
                         className='before-after-card-col'
                     >
                         <CardComponent
-                            cardClassName='before-after-card' // Ensure this matches your CSS class
+                            cardClassName='before-after-card'
                             title={image.headline}
                             content={image.content}
                             src={image.src}
                             imgPosition='top'
-                            altText={image.headline} // Assuming you want to use headline as altText
+                            altText={image.headline}
                         />
                     </Col>
                 ))}

@@ -9,7 +9,7 @@ import {
 import { Link, useLocation } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
-import 'components/Footer/Footer.css'
+import 'css/Footer.css'
 
 const Footer = () => {
     const location = useLocation()

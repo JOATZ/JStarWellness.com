@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import CardComponent from 'components/CardComponent'
 import { Carousel, CarouselItem, Col, Row } from 'reactstrap'
 
-import 'components/HomePage/ReviewsCarousel.css'
+import 'css/ReviewsCarousel.css'
 
 const items = [
     {

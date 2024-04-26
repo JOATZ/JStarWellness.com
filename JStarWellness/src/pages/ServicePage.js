@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
 import CardComponent from 'components/CardComponent'
-import SERVICES from 'components/ServicesOfferred/SERVICES.js'
 import { Link } from 'react-router-dom'
 import { Button, Col, Container, Row } from 'reactstrap'
 
-import 'pages/ServicePage.css'
+import 'css/ServicePage.css'
+
+import SERVICES from 'SITE_DATA/SERVICES.js'
 
 const ServicePage = () => {
     useEffect(() => {

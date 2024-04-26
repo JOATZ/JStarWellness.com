@@ -7,73 +7,58 @@ function importAll(r) {
 }
 
 const images = importAll(
-    require.context('../../../app/assets/img/pm/', false, /.*\..*$/)
+    require.context('../app/assets/img/nt/', false, /.*\..*$/)
 )
-
-const pmImages = [
+const ntImages = [
     {
         clientId: '1',
-        headline: 'Stretch Mark Removal',
+        headline: 'Transformation 1',
         author: 'Author 1',
         content: 'Content about transformation 1',
-        src: images['pic12.webp']
+        src: images['ClientComp1.webp']
     },
     {
         clientId: '2',
         headline: 'Transformation 2',
         author: 'Author 2',
         content: 'Content about transformation 2',
-        src: images['pic10.webp']
+        src: images['ClientComp2.webp']
     },
     {
         clientId: '3',
         headline: 'Transformation 3',
         author: 'Author 3',
         content: 'Content about transformation 3',
-        src: images['pic11.webp']
+        src: images['ClientComp3.webp']
     },
     {
         clientId: '4',
         headline: 'Transformation 4',
         author: 'Author 4',
         content: 'Content about transformation 4',
-        src: images['pic13.webp']
+        src: images['ClientComp4.webp']
     },
     {
         clientId: '4',
         headline: 'Transformation 4',
         author: 'Author 4',
         content: 'Content about transformation 4',
-        src: images['pic14.webp']
+        src: images['JennComp1.webp']
     },
     {
         clientId: '4',
         headline: 'Transformation 4',
         author: 'Author 4',
         content: 'Content about transformation 4',
-        src: images['pic16.webp']
+        src: images['JennComp2.webp']
     },
     {
         clientId: '4',
         headline: 'Transformation 4',
         author: 'Author 4',
         content: 'Content about transformation 4',
-        src: images['pic17.webp']
-    },
-    {
-        clientId: '4',
-        headline: 'Transformation 4',
-        author: 'Author 4',
-        content: 'Content about transformation 4',
-        src: images['pic19.webp']
-    },
-    {
-        clientId: '4',
-        headline: 'Transformation 4',
-        author: 'Author 4',
-        content: 'Content about transformation 4',
-        src: images['pic20.webp']
+        src: images['pic9.webp']
     }
 ]
 
-export default pmImages
+export default ntImages

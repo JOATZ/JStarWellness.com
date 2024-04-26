@@ -1,9 +1,10 @@
 import React from 'react'
-import pmImages from 'components/beforeAfter/pm/pm.js'
-import CardComponent from 'components/CardComponent.js' // Updated import
+import CardComponent from 'components/CardComponent.js'
 import { Col, Container, Row } from 'reactstrap'
 
-import 'pages/BeforeAndAfter.css'
+import 'css/BeforeAndAfter.css'
+
+import pmImages from 'SITE_DATA/BnAPM.js'
 
 const BeforeAndAfterPM = () => {
     return (
@@ -18,12 +19,12 @@ const BeforeAndAfterPM = () => {
                         className='before-after-card-col'
                     >
                         <CardComponent
-                            cardClassName='before-after-card' // Ensure this matches your CSS class
+                            cardClassName='before-after-card'
                             title={image.headline}
                             content={image.content}
                             src={image.src}
                             imgPosition='top'
-                            altText={image.headline} // Assuming you want to use headline as altText
+                            altText={image.headline}
                         />
                     </Col>
                 ))}

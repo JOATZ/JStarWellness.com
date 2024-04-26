@@ -29,7 +29,7 @@ import {
     Row
 } from 'reactstrap'
 
-import 'components/Header/Header.css'
+import 'css/Header.css'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)

@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { store } from './app/store'
 import App from './App'
 
-import './index.css'
+import 'css/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'typeface-open-sans'

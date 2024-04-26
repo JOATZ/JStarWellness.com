@@ -8,7 +8,7 @@ import {
     CarouselItem
 } from 'reactstrap'
 
-import 'components/HomePage/HomeCarousel.css'
+import 'css/HomeCarousel.css'
 
 const items = [
     {

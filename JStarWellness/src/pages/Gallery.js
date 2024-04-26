@@ -5,7 +5,7 @@ import CardComponent from 'components/CardComponent'
 import { Link } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
-import './Gallery.css'
+import 'css/Gallery.css'
 
 const Gallery = () => {
     useEffect(() => {

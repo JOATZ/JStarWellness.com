@@ -10,9 +10,9 @@ import {
     Row
 } from 'reactstrap'
 
-import EDUCATION from './EDUCATION'
+import EDUCATION from '../SITE_DATA/EDUCATION'
 
-import './EducationPage.css'
+import 'css/EducationPage.css'
 
 const EducationPage = () => {
     const [modal, setModal] = useState(false)

@@ -1,9 +1,10 @@
 import React from 'react'
 import CardComponent from 'components/CardComponent'
-import TESTIMONIALS from 'components/Testimonials/TESTIMONIALS'
 import { Col, Container, Row } from 'reactstrap'
 
-import './Testimonials.css'
+import 'css/Testimonials.css'
+
+import TESTIMONIALS from 'SITE_DATA/TESTIMONIALS'
 
 const Testimonials = () => {
     return (
