@@ -23,7 +23,18 @@ jobs:
             - name: Install dependencies
               run: npm install
 
+            - name: Install Firebase CLI
+              run: npm install -g firebase-tools
+
+            - name: Setup Firebase Service Account
+              env:
+                  FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS }}
+              run: |
+                  echo "$FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS" > ./firebase-service-account.json
+                  firebase use --add --token "$FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS"
+
             - name: Run publish script
               run: npm run publish
               env:
                   CI: true
+                  FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSTARWELLNESS }}
