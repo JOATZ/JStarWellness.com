@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid'
-
 function importAll(r) {
     let images = {}
     try {
@@ -15,11 +13,12 @@ function importAll(r) {
 const images = importAll(
     require.context('app/assets/img/gallery', false, /.*\..*$/)
 )
+
 const galleryImages = [
     {
         id: 'gal1',
         headline: '[ISSUE] improved in only [TIME] ',
-        service: 'Service Type Done',
+        service: 'Service Type Client had Done',
         content:
             'So and so did not like, or wanted to, with this and that they achieved somehting in just etc etc etc ',
         src: images['ClientComp1.webp']
