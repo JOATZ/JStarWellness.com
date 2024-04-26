@@ -32,7 +32,7 @@ jobs:
                   echo "GOOGLE_APPLICATION_CREDENTIALS=${{ github.workspace }}/firebase-service-account.json" >> $GITHUB_ENV
 
             - name: Configure Firebase Project
-              run: firebase use <your-firebase-project-id>
+              run: firebase use jstarwellness
 
             - name: Run publish script
               run: npm run publish
