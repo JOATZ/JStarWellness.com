@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react'
 import ProfilePic from 'app/assets/img/JennProfilePic.webp'
 import Client1 from 'app/assets/img/nt/ClientComp1.webp'
 import Client2 from 'app/assets/img/nt/ClientComp2.webp'
@@ -7,25 +6,9 @@ import FitPic1 from 'app/assets/img/nt/Fit1.webp'
 import JennComp1 from 'app/assets/img/nt/JennComp1.webp'
 import JennComp2 from 'app/assets/img/nt/JennComp2.webp'
 import Client3 from 'app/assets/img/nt/pic9.webp'
-import { useLocation } from 'react-router-dom'
 import { Col, Container, Row } from 'reactstrap'
 
 const About = () => {
-    const location = useLocation()
-
-    useEffect(() => {
-        const hash = location.hash
-        if (hash) {
-            const id = hash.replace('#', '')
-            const element = document.getElementById(id)
-            const navbar = document.querySelector('.navbar')
-            const navbarHeight = navbar.offsetHeight
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' })
-            }
-        }
-    }, [location])
-
     return (
         <Container id='top' className='about-page-container'>
             <Row

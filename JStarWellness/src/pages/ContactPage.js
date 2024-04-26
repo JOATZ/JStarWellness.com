@@ -1,6 +1,5 @@
 import ProfilePic from 'app/assets/img/JennProfilePic.webp'
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
-import { FaCcPaypal } from 'react-icons/fa'
 import { IoLogoVenmo } from 'react-icons/io5'
 import { SiAfterpay, SiPaypal, SiSquare, SiZelle } from 'react-icons/si'
 import { Col, Container, Row } from 'reactstrap'
