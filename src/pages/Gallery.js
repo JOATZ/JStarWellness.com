@@ -1,6 +1,7 @@
 import React from 'react'
 import CardComponent from 'components/CardComponent'
-import { Col, Container, Row } from 'reactstrap'
+import { Link } from 'react-router-dom'
+import { Button, Col, Container, Row } from 'reactstrap'
 
 import 'css/Gallery.css'
 
@@ -12,7 +13,6 @@ const Gallery = () => {
             <Row>
                 {galleryImages.map((image) => (
                     <Col
-                        xl='3'
                         lg='4'
                         md='6'
                         key={image.id}
@@ -25,6 +25,18 @@ const Gallery = () => {
                             src={image.src}
                             imgPosition='top'
                             altText={image.headline}
+                            footerContent={
+                                <>
+                                    {image.service}
+                                    <Button
+                                        tag={Link}
+                                        to={image.url}
+                                        className='gallery-btn'
+                                    >
+                                        Book
+                                    </Button>
+                                </>
+                            }
                         />
                     </Col>
                 ))}

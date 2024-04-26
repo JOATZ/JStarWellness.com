@@ -30,4 +30,26 @@ img {
     object-fit: contain; 
     aspect-ratio: 1 / 1; 
 }
-  
+
+.gallery-btn {
+    background-color: var(--primary-dark-color); 
+    color: white; 
+    border-color: var(--primary-dark-color); 
+    margin: 5px 5px;
+    font-size: 0.7rem;
+}
+
+.gallery-btn:hover {
+    background-color: var(--primary-light-color);
+    color: var(--primary-dark-color);
+}
+
+/*flex to push footer down */
+.custom-before-after-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+/*grow text to push footer down*/
+.custom-before-after-card .card-text {
+    flex:1;
+}
